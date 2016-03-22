@@ -1,0 +1,2 @@
+﻿ 
+ SOLIDs is design pattern for coding. The coding patterns just means a good practice to keep in mind when we create a class.

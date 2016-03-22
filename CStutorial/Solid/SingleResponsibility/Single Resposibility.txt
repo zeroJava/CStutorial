@@ -1,0 +1,12 @@
+﻿ 
+ Single responsibility
+
+ Single responsibility means that a class should be designed to do one thing and only have one responsility.
+
+ Instead of having one big class that does evrything, let's split it up into smaller classes.
+
+ e.g.
+
+ classes: 
+ User
+ Display

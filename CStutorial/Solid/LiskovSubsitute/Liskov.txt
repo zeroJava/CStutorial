@@ -1,0 +1,4 @@
+﻿ 
+ Liskov
+
+ The liskov principle just means that where ever a base class type if being used, it can be replace by a subclass and used without any errors
