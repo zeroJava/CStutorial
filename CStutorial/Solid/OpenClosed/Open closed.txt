@@ -3,10 +3,14 @@
 
  Open closed principle means that a class should be open to extensions, but closed to modification.
 
- What this means that when we create a class, that it should never come to a situation where we have to modify the functions in the class.
+ What this means that when we create a class, we should never come to a situation where we have to modify the functions in the class.
 
  What is menat by this is, that the class and the function should be future proof; meaning that in the future if there is feature that has been added,
- then we should it able to intergrate it to currenct classes (open to extension), without the need to go into the class and modify it.
+ then we should it able to intergrate it to currenct classes (open to extension), without the need to go into the class and modify it (close to modifaction).
+
+ The open close principle is the continuation from the single responsibilty principle, where the class should have a single responsibilty. The open close principle
+ takes of from here by saying that, when this class is made, we can never change the difition of the class; because by changing the class, we are changing its
+ purpose. 
 
  e.g.
 

@@ -1,0 +1,6 @@
+﻿ Interface segregation
+
+ Interface segreagtion mean that an interface should not have to much undefined method placed inside one interface, but rather split into a more sensible
+ and seperate interface.
+
+ So basically an iteface should be a place where

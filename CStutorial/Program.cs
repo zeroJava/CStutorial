@@ -74,12 +74,22 @@ namespace CStutorial
             CStutorial.Solid.SingleResponsibility.Dispalyclass.Print(user1);
             CStutorial.Solid.SingleResponsibility.Dispalyclass.Print(new Solid.SingleResponsibility.User(2, "FRANK LOW", "HIGHLAND"));*/
 
-            CStutorial.Solid.OpenClosed.Car car = new Solid.OpenClosed.Car();
+            /*CStutorial.Solid.OpenClosed.Car car = new Solid.OpenClosed.Car();
             CStutorial.Solid.OpenClosed.Motorcycle motorcycle = new Solid.OpenClosed.Motorcycle();
             CStutorial.Solid.OpenClosed.Truck truck = new Solid.OpenClosed.Truck();
             System.Console.WriteLine(CStutorial.Solid.OpenClosed.AutomobileValidator.CheckIfAutomobile(car));
             System.Console.WriteLine(CStutorial.Solid.OpenClosed.AutomobileValidator.CheckIfAutomobile(motorcycle));
-            System.Console.WriteLine(CStutorial.Solid.OpenClosed.AutomobileValidator.CheckIfAutomobile(truck));
+            System.Console.WriteLine(CStutorial.Solid.OpenClosed.AutomobileValidator.CheckIfAutomobile(truck));*/
+
+            /*CStutorial.Solid.LiskovSubsitute.CarViolation supercarViolate = new Solid.LiskovSubsitute.SportsCarViolated(8, "sports");
+            supercarViolate.SetEnginePower();
+            System.Console.WriteLine(supercarViolate.GetEngineSize() + " " + supercarViolate.GetWheelType() + "\n GetEnginePower " + supercarViolate.GetEnginePower()); // look at Getenginepower in SportsCarViolated
+
+            CStutorial.Solid.LiskovSubsitute.CarLSP superLSP = new Solid.LiskovSubsitute.SportsCarLSP(8, "sport");
+            superLSP.SetEnginePower();
+            System.Console.WriteLine(superLSP.GetEngineSize() + " " + superLSP.GetWheelType() + "\n GetEnginePower " + superLSP.GetEnginePower()); // look at GetEnginePower SportsCarLSP*/
+
+
 
             System.Console.ReadKey();
         }
