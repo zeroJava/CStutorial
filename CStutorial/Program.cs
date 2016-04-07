@@ -87,9 +87,12 @@ namespace CStutorial
 
             CStutorial.Solid.LiskovSubsitute.CarLSP superLSP = new Solid.LiskovSubsitute.SportsCarLSP(8, "sport");
             superLSP.SetEnginePower();
-            System.Console.WriteLine(superLSP.GetEngineSize() + " " + superLSP.GetWheelType() + "\n GetEnginePower " + superLSP.GetEnginePower()); // look at GetEnginePower SportsCarLSP*/
+            System.Console.WriteLine(superLSP.GetEngineSize() + " " + superLSP.GetWheelType() + "\n GetEnginePower " + superLSP.GetEnginePower());*/ // look at GetEnginePower SportsCarLSP
 
-
+            CStutorial.Solid.DependencyInversion.ICar super = new Solid.DependencyInversion.Supercar();
+            CStutorial.Solid.DependencyInversion.ICar saloon = new Solid.DependencyInversion.Saloon();
+            CStutorial.Solid.DependencyInversion.Validator.Validate(super);
+            CStutorial.Solid.DependencyInversion.Validator.Validate(saloon);
 
             System.Console.ReadKey();
         }

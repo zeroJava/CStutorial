@@ -10,3 +10,7 @@
  classes: 
  User
  Display
+
+ Here we have two classes: user and display. The user class will create objcets which are users of the system. Where as the display will display those users.
+ Using Single Responsibilty Principle, we have given each of those class a single purpose. Combining those those two claases together will violate the principle
+ because the combined class will have multiple purpose; which is, one to store the user, and the other to diplay the user. 

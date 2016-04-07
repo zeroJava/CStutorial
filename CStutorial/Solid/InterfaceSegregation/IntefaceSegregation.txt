@@ -1,6 +1,20 @@
 ﻿ Interface segregation
 
- Interface segreagtion mean that an interface should not have to much undefined method placed inside one interface, but rather split into a more sensible
- and seperate interface.
+ Interface segreagtion mean that an interface should not have to much undefined method placed inside one interface, but rather, breaking it down into a more sensible
+ and seperate interfaces. 
 
- So basically an iteface should be a place where
+ So what I mean is that you should not place all your methods inside one interface and forces the user to inherit method that they don't want and need.
+ This makes it hard on the developer to manage all this methods.
+
+ Basically the interface segregation principle is the interface of version of single responsibility principle that is the rule for classes, but without very strict, meaning 
+ that the interface does not have to focus on one thing.
+
+ e.g interface
+ CarViolate
+ ICar
+ INavigation
+ IOperating System
+
+ In the CarViolate interface, i place all my methods into one place, which is violates the Interface segregation principle. But interfaces like Icar, Inavigation and
+ Ioperating system are complimenting interface segregation principle, because we have seperate the methods from carviolated into different interfaces; making it managable
+ for the devoper.

@@ -14,7 +14,7 @@
 
  e.g.
 
- automobilevalidator
+ automobilevalidator // check out this class for explaination
  car
  motor
  truck

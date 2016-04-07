@@ -63,6 +63,14 @@
     <Compile Include="Partialclass\Partialeg2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Solid\DependencyInversion\ICar.cs" />
+    <Compile Include="Solid\DependencyInversion\Saloon.cs" />
+    <Compile Include="Solid\DependencyInversion\Supercar.cs" />
+    <Compile Include="Solid\DependencyInversion\Validator.cs" />
+    <Compile Include="Solid\InterfaceSegregation\CarViolated.cs" />
+    <Compile Include="Solid\InterfaceSegregation\ICar.cs" />
+    <Compile Include="Solid\InterfaceSegregation\INavigationSystem.cs" />
+    <Compile Include="Solid\InterfaceSegregation\IOperatingSystem.cs" />
     <Compile Include="Solid\LiskovSubsitute\CarLSP.cs" />
     <Compile Include="Solid\LiskovSubsitute\CarViolation.cs" />
     <Compile Include="Solid\LiskovSubsitute\SportsCarViolated.cs" />
@@ -81,10 +89,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Solid\DependencyInversion\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="Solid\DependencyInversion\Dependency.txt" />
     <Content Include="Solid\InterfaceSegregation\IntefaceSegregation.txt" />
     <Content Include="Solid\LiskovSubsitute\Liskov.txt" />
     <Content Include="Solid\OpenClosed\Open closed.txt" />

@@ -1,0 +1,17 @@
+﻿ Dependency Inversion principle
+
+ High level modules should not depend upon low-level modules. Both should depend upon abstractions.
+ Abstractions should never depend upon details. Details should depend upon abstractions
+
+ Dependency inversion principle means that components should not be depend on specific classes. Instead the components in the class should be joined through 
+ abstraction. Meaning data types in varaibles and method parameters should be abstract and not specific.
+
+ Dependency inversion principle compliments abstraction and loose coupling.
+
+ E.g
+ ICar
+ Supercar
+ Saloon
+ Valdator
+
+ We made our validate method deal in an abstract level, so it would not be tied to specific class, and thus making it more flexible.
