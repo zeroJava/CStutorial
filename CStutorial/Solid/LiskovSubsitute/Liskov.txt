@@ -4,7 +4,7 @@
  The liskov principle means where ever there is a base class type being used, it can be replace by a subclass and can used without causing any errors.
  Liskov is complimenting astraction and polymorphism.
 
- Liskov principle is essentially a saying, if you're going to put a base class, then make sure that some of the functions are marked with the keyword: overritten 
+ Liskov principle is essentially a saying, if you're going to put a base class, then make sure that some of the functions are marked with the keyword: virtual 
  so that they can be overritten in the subclass, so when the said method is executed, it will call the version in the sub class, and NOT the one in the base class.
 
  but the methods that being overritten should consistent in the fact that should not stray away from the purpose of the base class method 

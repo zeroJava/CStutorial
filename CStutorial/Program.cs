@@ -68,7 +68,15 @@ namespace CStutorial
             switchclass.ListOfEverything();*/
 
             /*string str = "displat";
-            str.Display();*/ // Etension method being used here
+            str.Display();*/ // Extension method being used here
+
+            /*CStutorial.Delatges.DisplayData _display = new CStutorial.Delatges.DisplayData(Delatges.Delegateclass1.Method3);
+            _display("Jonathane Smyth");
+
+            CStutorial.Delatges.Delegateclass2 _delegate = new Delatges.Delegateclass2();
+            _delegate.Execute(); */ // delegates being used here
+
+            // ----------------------- solid principle -------------------------
 
             /*CStutorial.Solid.SingleResponsibility.User user1 = new Solid.SingleResponsibility.User(1, "JOHN SMITH", "LOWLAND");
             CStutorial.Solid.SingleResponsibility.Dispalyclass.Print(user1);
@@ -89,10 +97,10 @@ namespace CStutorial
             superLSP.SetEnginePower();
             System.Console.WriteLine(superLSP.GetEngineSize() + " " + superLSP.GetWheelType() + "\n GetEnginePower " + superLSP.GetEnginePower());*/ // look at GetEnginePower SportsCarLSP
 
-            CStutorial.Solid.DependencyInversion.ICar super = new Solid.DependencyInversion.Supercar();
+            /*CStutorial.Solid.DependencyInversion.ICar super = new Solid.DependencyInversion.Supercar();
             CStutorial.Solid.DependencyInversion.ICar saloon = new Solid.DependencyInversion.Saloon();
             CStutorial.Solid.DependencyInversion.Validator.Validate(super);
-            CStutorial.Solid.DependencyInversion.Validator.Validate(saloon);
+            CStutorial.Solid.DependencyInversion.Validator.Validate(saloon);*/
 
             System.Console.ReadKey();
         }

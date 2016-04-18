@@ -51,6 +51,7 @@
     <Compile Include="Castings\Asclasseg.cs" />
     <Compile Include="Castings\Isclasseg.cs" />
     <Compile Include="Delatges\Delegateclass1.cs" />
+    <Compile Include="Delatges\Delegateclass2.cs" />
     <Compile Include="Extensionmethod\ExtensionmethodClass.cs" />
     <Compile Include="Flowcontrols\IfelseStatements.cs" />
     <Compile Include="Flowcontrols\Switchstatement.cs" />
@@ -91,6 +92,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Event\EventsExplained.txt" />
     <Content Include="Solid\DependencyInversion\Dependency.txt" />
     <Content Include="Solid\InterfaceSegregation\IntefaceSegregation.txt" />
     <Content Include="Solid\LiskovSubsitute\Liskov.txt" />
