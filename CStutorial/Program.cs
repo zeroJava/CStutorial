@@ -37,6 +37,7 @@ namespace CStutorial
 
             /*int number = 5;
             int number2;
+            // pass by reference happing here
             CStutorial.Methods.PassbyReferenceParameters _passByRef = new Methods.PassbyReferenceParameters();
             _passByRef.ExecuteRef(ref number); // we have to use the keyword ref when invoking a method whose parameter has the ref keyword. 
             _passByRef.ExecuteOut(out number2);
@@ -75,6 +76,28 @@ namespace CStutorial
 
             CStutorial.Delatges.Delegateclass2 _delegate = new Delatges.Delegateclass2();
             _delegate.Execute(); */ // delegates being used here
+
+            //generics happing here
+            /*CStutorial.Generics.GenericClass<string> _gen1 = new Generics.GenericClass<string>();
+            _gen1.Property1 = "Hello";
+            _gen1.Property2 = "Yo";
+            _gen1.Display();
+
+            CStutorial.Generics.GenericClass<int> _gen2 = new Generics.GenericClass<int>();
+            _gen2.Property1 = 1; // generic are type safe
+            _gen2.Property2 = 2;
+            _gen2.Display();
+
+            CStutorial.Generics.GenericMethods<string>.Display("Hello");
+            CStutorial.Generics.GenericMethods<int>.Display(54);
+
+            CStutorial.Generics.GenericMethods<string>.DisplayData<string>("Sawg 74"); // it ingore the type parameter at the class name
+            CStutorial.Generics.GenericMethods<string>.DisplayData("Sawg");
+            CStutorial.Generics.GenericMethods<string>.DisplayData<int>(12345); // it ingore the type parameter at the class name
+            CStutorial.Generics.GenericMethods<string>.DisplayData(732); // generics can automatically assign the data type of type parameter of the argument, by cheching the method argument
+            */
+
+
 
             // ----------------------- solid principle -------------------------
 
