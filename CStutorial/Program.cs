@@ -31,13 +31,9 @@ namespace CStutorial
 
             //CStutorial.Basics.MathematicalOperators.DisplayFunctionalities();
 
-            //Arrays.Arraysexample arrys = new Arrays.Arraysexample();
-
-            //List.Listexample list = new CStutorial.List.Listexample();
-
+            // ------------------------------------------ pass by reference happing here
             /*int number = 5;
             int number2;
-            // pass by reference happing here
             CStutorial.Methods.PassbyReferenceParameters _passByRef = new Methods.PassbyReferenceParameters();
             _passByRef.ExecuteRef(ref number); // we have to use the keyword ref when invoking a method whose parameter has the ref keyword. 
             _passByRef.ExecuteOut(out number2);
@@ -97,7 +93,12 @@ namespace CStutorial
             CStutorial.Generics.GenericMethods<string>.DisplayData(732); // generics can automatically assign the data type of type parameter of the argument, by cheching the method argument
             */
 
+            // ------------------------------------------------------- Collections
 
+            //Arrays.Arraysexample arrys = new Arrays.Arraysexample();
+            //List.Listexample list = new CStutorial.List.Listexample();
+            //Set.Setexample _set = new Set.Setexample();
+            Dictionarys.Dictionaryexample _dictionary = new Dictionarys.Dictionaryexample();
 
             // ----------------------- solid principle -------------------------
 

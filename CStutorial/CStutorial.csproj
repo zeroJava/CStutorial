@@ -52,6 +52,7 @@
     <Compile Include="Castings\Isclasseg.cs" />
     <Compile Include="Delatges\Delegateclass1.cs" />
     <Compile Include="Delatges\Delegateclass2.cs" />
+    <Compile Include="Dictionarys\Dictionaryexample.cs" />
     <Compile Include="Extensionmethod\ExtensionmethodClass.cs" />
     <Compile Include="Flowcontrols\IfelseStatements.cs" />
     <Compile Include="Flowcontrols\Switchstatement.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="Partialclass\Partialeg2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Set\Setexample.cs" />
     <Compile Include="Solid\DependencyInversion\ICar.cs" />
     <Compile Include="Solid\DependencyInversion\Saloon.cs" />
     <Compile Include="Solid\DependencyInversion\Supercar.cs" />
