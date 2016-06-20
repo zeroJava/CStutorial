@@ -61,7 +61,14 @@
     <Compile Include="Indexer\IndexerEg.cs" />
     <Compile Include="Inheritance\Class1.cs" />
     <Compile Include="Inheritance\Class2.cs" />
+    <Compile Include="Inheritance\Methods\BaseClass.cs" />
+    <Compile Include="Inheritance\Methods\SubClassOne.cs" />
+    <Compile Include="Inheritance\Methods\SubClassTwo.cs" />
+    <Compile Include="Interfaces\IExample1.cs" />
+    <Compile Include="Interfaces\IExample2.cs" />
+    <Compile Include="Interfaces\IterfaceExampleClass.cs" />
     <Compile Include="List\Listexample.cs" />
+    <Compile Include="Methods\ParamaterArraysMethod.cs" />
     <Compile Include="Methods\PassbyReferenceParameters.cs" />
     <Compile Include="Partialclass\Partialeg.cs" />
     <Compile Include="Partialclass\Partialeg2.cs" />
@@ -89,6 +96,7 @@
     <Compile Include="Solid\SingleResponsibility\User.cs" />
     <Compile Include="Structs\Sructeg.cs" />
     <Compile Include="Switches\Switchclass.cs" />
+    <Compile Include="TaskMaster\Anagram.cs" />
     <Compile Include="Variables\Variables.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +105,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Event\EventsExplained.txt" />
+    <Content Include="MultiThreads\Explained.txt" />
     <Content Include="Solid\DependencyInversion\Dependency.txt" />
     <Content Include="Solid\InterfaceSegregation\IntefaceSegregation.txt" />
     <Content Include="Solid\LiskovSubsitute\Liskov.txt" />

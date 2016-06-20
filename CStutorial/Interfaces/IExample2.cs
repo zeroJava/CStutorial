@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CStutorial.Castings
+namespace CStutorial.Interfaces
 {
-    class Asclasseg
+    // Look at IExample1
+
+    interface IExample2
     {
-        // string _string = A as B;
-        // 'as' keyword can be used to cast
+        void Method1();
+        void Method2();
     }
 }

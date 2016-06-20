@@ -22,7 +22,7 @@ namespace CStutorial.Indexer
             }
         }
 
-        /* this above is an example of indexer.
+        /* this above is an example of custom indexer.
          * With the indexer, we modify the 'this' operator, and we define it to bring data from an array.
          * This allows our object to retreive data directly
          * e.g.
@@ -31,6 +31,17 @@ namespace CStutorial.Indexer
          * System.Console.WriteLine(index[1]);
          * index[1] = "earth";
         */
+
+        /* Indexers is a feature in c#, which allows to access collections like list directly access elements in collect using [] like we do with arrays.
+         * e.g.
+         * IList list = new  List();
+         * list.Add("hello");
+         * list.Add("hello");
+         * list.Add("hello");
+         * list.Add("hello");
+         * 
+         * list[2]; // indexer happening here
+         * */
 
         public void Adddata()
         {

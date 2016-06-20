@@ -11,6 +11,8 @@ namespace CStutorial
     {
         static void Main(string[] args)
         {
+            // http://www.dotnetperls.com/collections
+
             /*CStutorial.Basics.BasicsStuff obj = new Basics.BasicsStuff(5);
             obj.Adding(100);
             obj.Universal = true;
@@ -40,11 +42,19 @@ namespace CStutorial
             Console.WriteLine(number.ToString());
             Console.WriteLine(number2.ToString());*/
 
+            // -------------------------------------------- | Parameter arrays method (varargs) | ---
+
+            // Methods.ParamaterArraysMethod.ListAllNames("John", "Mike", "MeHe", "Donkey");
+
+            // -------------------------------------------- | Indexer | ---
+
             /*CStutorial.Indexer.IndexerEg index = new Indexer.IndexerEg();
             index.Adddata();
             System.Console.WriteLine(index[1]);
             index[1] = "earth";
             System.Console.WriteLine(index[1]);*/
+
+            // -------------------------------------------- | Partial | ---
 
             /*CStutorial.Partialclass.Partialeg partial1 = new Partialclass.Partialeg();
             partial1.Name = "sigmund";
@@ -98,7 +108,7 @@ namespace CStutorial
             //Arrays.Arraysexample arrys = new Arrays.Arraysexample();
             //List.Listexample list = new CStutorial.List.Listexample();
             //Set.Setexample _set = new Set.Setexample();
-            Dictionarys.Dictionaryexample _dictionary = new Dictionarys.Dictionaryexample();
+            //Dictionarys.Dictionaryexample _dictionary = new Dictionarys.Dictionaryexample();
 
             // ----------------------- solid principle -------------------------
 
@@ -125,6 +135,22 @@ namespace CStutorial
             CStutorial.Solid.DependencyInversion.ICar saloon = new Solid.DependencyInversion.Saloon();
             CStutorial.Solid.DependencyInversion.Validator.Validate(super);
             CStutorial.Solid.DependencyInversion.Validator.Validate(saloon);*/
+
+            // --------------------------- | Inheritance methods | -------------------------------
+
+            /*CStutorial.Inheritance.Methods.BaseClass _object1 = new Inheritance.Methods.SubClassTwo();
+            _object1.MethodTwo();
+
+            CStutorial.Inheritance.Methods.BaseClass _obhect2 = new Inheritance.Methods.SubClassOne();
+            _obhect2.MethodOne(); // this object will use base class data type, and the methodone prevent late-binding.
+
+            CStutorial.Inheritance.Methods.SubClassOne _object3 = new Inheritance.Methods.SubClassOne();
+            _object3.MethodOne();*/
+
+            // ------------------------------- | Task master | -----------------------------------
+
+            //System.Console.WriteLine(CStutorial.TaskMaster.Anagram.AreStringsAnagram("hello", "olhel"));
+            //System.Console.WriteLine(CStutorial.TaskMaster.Anagram.IndexValueR2("abbccddddcccdda"));
 
             System.Console.ReadKey();
         }
