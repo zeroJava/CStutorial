@@ -152,6 +152,9 @@ namespace CStutorial
             //System.Console.WriteLine(CStutorial.TaskMaster.Anagram.AreStringsAnagram("hello", "olhel"));
             //System.Console.WriteLine(CStutorial.TaskMaster.Anagram.IndexValueR2("abbccddddcccdda"));
 
+            CStutorial.Event.EventExample2 _event2 = new Event.EventExample2();
+            _event2.Execute();
+
             System.Console.ReadKey();
         }
     }
