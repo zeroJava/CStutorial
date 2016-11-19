@@ -13,12 +13,18 @@ namespace CStutorial.Event
         public void Execute()
         {
             _example1.OEventHandler += OnHandler; // Subscribing the handler
+            _example1.OEventHandler2 += OnhandlerTwo; //
             _example1.Display();
         }
 
         private void OnHandler()
         {
             System.Console.WriteLine("Inside the onnhandler method in EventExample2");
+        }
+
+        private void OnhandlerTwo(object source, ExampleHnadlerArgs receiver)
+        {
+            System.Console.WriteLine("Inside the onnhandlerTwo method in EventExample2.\n" + receiver.Message);
         }
     }
 }

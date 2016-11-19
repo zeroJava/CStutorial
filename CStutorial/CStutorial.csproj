@@ -55,6 +55,7 @@
     <Compile Include="Dictionarys\Dictionaryexample.cs" />
     <Compile Include="Event\EventExample2.cs" />
     <Compile Include="Event\EventsExample1.cs" />
+    <Compile Include="Event\ExampleHnadlerArgs.cs" />
     <Compile Include="Extensionmethod\ExtensionmethodClass.cs" />
     <Compile Include="Flowcontrols\IfelseStatements.cs" />
     <Compile Include="Flowcontrols\Switchstatement.cs" />
