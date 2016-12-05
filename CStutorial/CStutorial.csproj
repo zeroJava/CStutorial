@@ -100,6 +100,7 @@
     <Compile Include="Structs\Sructeg.cs" />
     <Compile Include="Switches\Switchclass.cs" />
     <Compile Include="TaskMaster\Anagram.cs" />
+    <Compile Include="Trees\TrNode.cs" />
     <Compile Include="Variables\Variables.cs" />
   </ItemGroup>
   <ItemGroup>

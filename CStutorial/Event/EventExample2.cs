@@ -24,7 +24,7 @@ namespace CStutorial.Event
 
         private void OnhandlerTwo(object source, ExampleHnadlerArgs receiver)
         {
-            System.Console.WriteLine("Inside the onnhandlerTwo method in EventExample2.\n" + receiver.Message);
+            System.Console.WriteLine("Inside the onnhandlerTwo method in EventExample2. " + receiver.Message);
         }
     }
 }
