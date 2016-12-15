@@ -13,7 +13,7 @@ namespace CStutorial.Solid.OpenClosed
             return automobile.AutocmobileCertifcate();
         }
 
-        /* This open close principle in action
+        /* This open close principle in ActionDelg
          * here we have created a method that future proof, meaning that we don't have to come in and change the function everytime 
          * new automobile type machine is made.
         */

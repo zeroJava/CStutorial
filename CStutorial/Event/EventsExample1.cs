@@ -24,7 +24,7 @@ namespace CStutorial.Event
              * (event-handler)
              * */
 
-            /* It is vital that event is given a method (action) to subscribe to, before
+            /* It is vital that event is given a method (ActionDelg) to subscribe to, before
              * this display function is used, becuase it throw an NullReferenceException
              * if not subscribed. 
              * */

@@ -155,8 +155,13 @@ namespace CStutorial
             //CStutorial.Event.EventsExample1 _event1 = new Event.EventsExample1();
             //_event1.Display(); // This will trow an error
 
-            CStutorial.Event.EventExample2 _event2 = new Event.EventExample2();
-            _event2.Execute();
+            /*CStutorial.Event.EventExample2 _event2 = new Event.EventExample2();
+            _event2.Execute();*/
+
+            // ----------------------------- | Func and Action | --------------------------------
+
+            CStutorial.FuncsNActions.ActionExampleTwo _actionExaple2 = new FuncsNActions.ActionExampleTwo();
+            _actionExaple2.Execute();
 
             System.Console.ReadKey();
         }
