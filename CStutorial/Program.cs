@@ -83,26 +83,6 @@ namespace CStutorial
             CStutorial.Delatges.Delegateclass2 _delegate = new Delatges.Delegateclass2();
             _delegate.Execute(); */ // delegates being used here
 
-            //generics happing here
-            /*CStutorial.Generics.GenericClass<string> _gen1 = new Generics.GenericClass<string>();
-            _gen1.Property1 = "Hello";
-            _gen1.Property2 = "Yo";
-            _gen1.Display();
-
-            CStutorial.Generics.GenericClass<int> _gen2 = new Generics.GenericClass<int>();
-            _gen2.Property1 = 1; // generic are type safe
-            _gen2.Property2 = 2;
-            _gen2.Display();
-
-            CStutorial.Generics.GenericMethods<string>.Display("Hello");
-            CStutorial.Generics.GenericMethods<int>.Display(54);
-
-            CStutorial.Generics.GenericMethods<string>.DisplayData<string>("Sawg 74"); // it ingore the type parameter at the class name
-            CStutorial.Generics.GenericMethods<string>.DisplayData("Sawg");
-            CStutorial.Generics.GenericMethods<string>.DisplayData<int>(12345); // it ingore the type parameter at the class name
-            CStutorial.Generics.GenericMethods<string>.DisplayData(732); // generics can automatically assign the data type of type parameter of the argument, by cheching the method argument
-            */
-
             // ------------------------------------------------------- Collections
 
             //Arrays.Arraysexample arrys = new Arrays.Arraysexample();
@@ -160,8 +140,47 @@ namespace CStutorial
 
             // ----------------------------- | Func and Action | --------------------------------
 
-            CStutorial.FuncsNActions.ActionExampleTwo _actionExaple2 = new FuncsNActions.ActionExampleTwo();
-            _actionExaple2.Execute();
+            /*CStutorial.FuncsNActions.ActionExampleTwo _actionExaple2 = new FuncsNActions.ActionExampleTwo();
+            _actionExaple2.Execute();*/
+
+            // ----------------------------- | Generics methods | --------------------------------
+
+            //CStutorial.Generics.GenericMethods<string>.Display("Hello");
+            //CStutorial.Generics.GenericMethods<int>.Display(1);
+            //CStutorial.Generics.GenericMethods<string>.DisplayData<int>(10000);
+            //CStutorial.Generics.GenericMethods<string>.DisplayData<Arrays.Arraysexample>(new Arrays.Arraysexample());
+            //CStutorial.Generics.GenericMethods<string>.DisplatGenricOfCertainType<Inheritance.Class1>(new Inheritance.Class1());
+
+            // ----------------------------- | Generics | -----------------------------------------
+
+            /*CStutorial.Generics.GenericClass<string> _gen1 = new Generics.GenericClass<string>();
+            _gen1.Property1 = "Hello";
+            _gen1.Property2 = "Yo";
+            _gen1.Display();
+
+            CStutorial.Generics.GenericClass<int> _gen2 = new Generics.GenericClass<int>();
+            _gen2.Property1 = 1; // generic are type safe
+            _gen2.Property2 = 2;
+            _gen2.Display();
+
+            CStutorial.Generics.GenericMethods<string>.Display("Hello");
+            CStutorial.Generics.GenericMethods<int>.Display(54);
+
+            CStutorial.Generics.GenericMethods<string>.DisplayData<string>("Sawg 74"); // it ingore the type parameter at the class name
+            CStutorial.Generics.GenericMethods<string>.DisplayData("Sawg");
+            CStutorial.Generics.GenericMethods<string>.DisplayData<int>(12345); // it ingore the type parameter at the class name
+            CStutorial.Generics.GenericMethods<string>.DisplayData(732); // generics can automatically assign the data type of type parameter of the argument, by cheching the method argument
+            */
+
+            // -------------------------------- | Generic Interface | -------------------------------- 
+
+            /*CStutorial.Generics.GenericInterfaceClass _genericInterface = new Generics.GenericInterfaceClass();
+            _genericInterface.GenericMethod2<string>("hello");
+            _genericInterface.GenericMethod2<int>(5);*/
+
+            // ------------------------------- | Polymorphism | ------------------------------
+
+            CStutorial.Polymorphisms.PolClass4 _polclass4 = new Polymorphisms.PolClass4();
 
             System.Console.ReadKey();
         }

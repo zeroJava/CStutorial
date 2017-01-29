@@ -16,7 +16,9 @@ namespace CStutorial.Generics
             System.Console.WriteLine("Value of prop1 " + Property1 + " and prop2 " + Property2);
         }
 
-        /* generic allows us to use type parameter which act a placeholder, which gives us the option to add any data type we want when we use it. 
+        /* generic allows us to use type parameter which act a placeholder, 
+         * which gives us the option to add any data type we want when we 
+         * use it. 
          * */
     }
 }
