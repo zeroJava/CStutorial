@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/* This whole file is the the source code, which will be
+ * compiled into an exe, which is our assembly/binary
+ * */
 namespace CStutorial.Basics
 {
     public class BasicsStuff

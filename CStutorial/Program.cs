@@ -180,7 +180,10 @@ namespace CStutorial
 
             // ------------------------------- | Polymorphism | ------------------------------
 
-            CStutorial.Polymorphisms.PolClass4 _polclass4 = new Polymorphisms.PolClass4();
+            //CStutorial.Polymorphisms.PolClass4 _polclass4 = new Polymorphisms.PolClass4();
+
+            Castings.Collections.CastCollDemo demoll = new Castings.Collections.CastCollDemo();
+            demoll.Execute();
 
             System.Console.ReadKey();
         }
