@@ -5,12 +5,53 @@ using System.Text;
 using System.Threading.Tasks;
 
 /* This whole file is the the source code, which will be
- * compiled into an exe, which is our assembly/binary
+ * compiled into an exe, which is our assembly/binary.
+ * 
+ * Depending on the project type, an assembly can either be
+ * an application (.exe) or a library(dll).
+ * 
+ * If the project contains a main method, then the compiler
+ * compiles the source code as an application.
+ * If it can't find a main method, then the compiler compiles
+ * the source code a library.
+ * 
+ * The compiler used by c# is the c# compiler: csc.exe
  * */
+
+/* The main method is the entry point of c#.
+ *  */
 namespace CStutorial.Basics
 {
     public class BasicsStuff
     {
+        /* In c# there two categories for data-types: primitive
+         * and custom.
+         * 
+         * A primitive type are just your basic standard built-in
+         * type provided by the c# languages.
+         * These data-type are the int, char, float string etc;
+         * basically any data-type that is a key word.
+         * 
+         * A custom type is basically your own class, which you
+         * created using primitive data-types.
+         * */
+
+        /* These variables.
+         * 
+         * What are variables?
+         * Varaibles are 
+         * */
+
+        private int _numberOne = 10;
+        private string _word = "Hello world";
+
+
+        /* A literal just means that the values have been hard coded
+         * into the source code.
+         * */
+        private int _numberLiteral = 5; // 5 is a literal, because we put in number 5;
+        private string wordLiteral = "Literal";
+
         public string Name { get; set; }
         public int Number { get; set; }
         public object Universal { get; set; } // object data-type is a primitive data type equivalent of Object class in java.
