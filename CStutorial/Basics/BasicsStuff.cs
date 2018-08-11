@@ -39,7 +39,12 @@ namespace CStutorial.Basics
         /* These variables.
          * 
          * What are variables?
-         * Varaibles are 
+         * As Joseph Albahari said, "a variable represents a storage 
+         * location that has a modifiable value". 
+         * What he means is that a variable is an instruction to the 
+         * compiler telling it to create a storage space in the memory, 
+         * which will be used to hold certain values, and that the name 
+         * of the storage location is the we give it.
          * */
 
         private int _numberOne = 10;
@@ -61,6 +66,10 @@ namespace CStutorial.Basics
         {
             this.Number = number;
         }
+
+        /* total and number are local variables and parameters, an thus will
+         * be allocated to the stack.
+         * */
 
         public void Adding(int number)
         {
