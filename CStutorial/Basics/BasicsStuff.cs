@@ -57,6 +57,9 @@ namespace CStutorial.Basics
         private int _numberLiteral = 5; // 5 is a literal, because we put in number 5;
         private string wordLiteral = "Literal";
 
+		private string _verbatimStringLiteral = @"This is a verbatim string literal";
+		private string _verbatimStringExplained = @"A verbatim is the @ sign before a string literal.";
+
         public string Name { get; set; }
         public int Number { get; set; }
         public object Universal { get; set; } // object data-type is a primitive data type equivalent of Object class in java.

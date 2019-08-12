@@ -1,28 +1,63 @@
 ﻿ ----- Variable -----
- As Joseph Albahari said, "a variable represents a storage location that has a modifiable value".
- What he means is that a variable is an instruction to the compiler telling it to create a storage 
- space in the memory, which will be used to hold certain values, and that the name of the storage
- location is the we give it, i.e the variable name.
+ /* As Joseph Albahari said, "a variable represents a storage location that has a modifiable value".
+  * What he means is that a variable is an instruction to the compiler telling it to create a storage 
+  * space in the memory, which will be used to hold certain values, and that the name of the storage
+  * location is the we give it, i.e the variable name.
+  * */
 
  ----- Head and stack -----
- The compiler deals with storing variable two ways, and it either stores it in the stack or the heap.
+ /* The compiler deals with storing variable two ways, and it either stores it in the stack or the heap.
 
- The stack and heap are two region of the memory (ram). The stack section memory is closely monitored
- section where the cpu automatically added and removes memory resource in last in first out approach.
- Whereas the heap section of the memory is not monitored, and is up to the user to clear memory resource,
- but in java and .net, the virtual machine deals with managing the memory.
+  * The stack and heap are two region of the memory (ram). The stack section of the memory is a closely
+  * monitored section where the cpu automatically added and removes memory resource in last in first out
+  * approach.
+  * Whereas the heap section of the memory is not monitored, and is up to the user to clear memory resource,
+  * but in java and .net, the virtual machine deals with managing the memory.
 
- The stack stores method parameters or variable that are local (i.e. variables inside methods) wether 
- they're value or reference type.
+  * The stack stores method parameters or variable that are local (i.e. variables inside methods) wether 
+  * they're value or reference type. This notation of saving of saving parameters to the stack ony applies
+  * to programming languages uses 'Pass-By-Value' when dealing with arguments <need more research on this 
+  * statement>.
+  *
+  * Objects are stored in the heap, but the local (method) reference variable is stored in the stack,
+  * which points to the heap.
+  * E.g.
+  * With reference type local variables, the compiiler creates the creates the object, and stores it in the
+  * heap, but the variable (reference) is stored in the stack.
+  *
+  * I.e. local variable heap/stack;
+  *
+  * void FunctionOne(object p1)
+  * {
+  *		string s1 = "Hello world";
+  * }
+  *
+  * +---------+---------------+
+  * | p1	  | 0x00024		  | // Storing the reference of parametr p1 in the stack.
+  * | s1      | 0x00026		  | // Storing the local variable s1 in the stack.
+  * | 0x00024 | object		  | // The compiler created and stored object here in the heap for p1.
+  * | 0x00025 |				  |
+  * | 0x00026 | "Hello world" | // The compiler created and stored object here in the heap for s1.
+  * +---------+---------------+
+  *
+  * Instant varaibles that are reference type are always stored in the heap.
+  *
+  * Value-type instance like structs are allocated either in the stack or heap depending on where the variable
+  * was declared, i.e if the value-type variable is a field within a class type or an array the it will stored
+  * in the heap with the object. (AlBahari)
 
- Objects are stored in the heap, but the local reference variable is stored in the stack, which points to
- the heap. Instant varaibles that are reference type are always stored in the heap.
-
- Value-type instance like structs are allocated either in the stack or heap depending on where the variable
- was declared, i.e if the value-type variable is a field within a class type or an array the it will stored
- in the heap with the object. (AlBahari)
-
- All static vraibles are stored in the heap.
+  * All static vraibles are stored in the heap.
+  * */
 
  http://jonskeet.uk/csharp/memory.html
  https://www.gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html
+
+ /* Info about heap stack memory*/
+ http://net-informations.com/faq/net/stack-heap.htm
+
+ /* <Refresher Note>
+  * Remember instant variable are variable that are defined inside the class, and are class level, meaning they
+  * can be accessed by function inside the class; and depending on the visibility (access modifiers), they can be accessed by subclasses or
+  * other class via objects.
+  * </Refresher Note>
+  * */
