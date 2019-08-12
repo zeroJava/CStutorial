@@ -123,6 +123,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Arrays\ArraysExplained.txt" />
     <Content Include="Basics\StackAndHeapExplained.txt" />
     <Content Include="Event\EventsExplained.txt" />
     <Content Include="MultiThreads\Explained.txt" />
