@@ -24,7 +24,7 @@ namespace CStutorial.Basics
 {
     public class BasicsStuff
     {
-        /* In c# there two categories for data-types: primitive
+		/* In c# there two categories for data-types: primitive
          * and custom.
          * 
          * A primitive type are just your basic standard built-in
@@ -36,7 +36,7 @@ namespace CStutorial.Basics
          * created using primitive data-types.
          * */
 
-        /* These variables.
+		/* These variables.
          * 
          * What are variables?
          * As Joseph Albahari said, "a variable represents a storage 
@@ -47,7 +47,18 @@ namespace CStutorial.Basics
          * of the storage location is the we give it.
          * */
 
-        private int _numberOne = 10;
+		/* Default values
+		 * 
+		 * +----------------------+-------+
+		 * | Reference type       | null  |
+		 * | All numeric and enum | 0     |
+		 * | char                 | '\0'  |
+		 * | bool type            | false |
+		 * +----------------------+-------+
+		 * 
+		 * */
+		
+		private int _numberOne = 10;
         private string _word = "Hello world";
 
 
@@ -64,6 +75,8 @@ namespace CStutorial.Basics
         public int Number { get; set; }
         public object Universal { get; set; } // object data-type is a primitive data type equivalent of Object class in java.
         public bool State { get; set; }
+
+
 
         public BasicsStuff(int number)
         {

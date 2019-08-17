@@ -10,20 +10,20 @@ namespace CStutorial.Arrays
     {
 		/* An array is a linear data structure, which allows multiple variables to be placed inside a
 		 * single variable, which the compiler/OS stores as a continous block of memory (Al Bahari, c# 7.0).
-		 * I.e. int[] ar = new int[5] { 0, 2, 5, 3, 2}; // stored in memory
-		 * +-----------+
+		 * E.g. int[] ar = new int[5] { 0, 2, 5, 3, 2}; // stored in memory
+		 * +-------+---+
 		 * | ar[0] | 0 |
 		 * | ar[0] | 2 |
 		 * | ar[0] | 5 |
 		 * | ar[0] | 3 |
 		 * | ar[0] | 2 |
-		 * +-----------+
+		 * +-------+---+
 		 * */
 
 		/* Arrays are of fixed size, meaning that once they're iniitialised, the size of the array cannot be
 		 * changed, but the varaible can be overridden with a new array.
 		 * 
-		 * I.e.
+		 * e.g.
 		 * int arr = new int[5];
 		 * arr.add(); // compiler error no function exist.
 		 * arr = new int[6]; // This is legal.
@@ -72,6 +72,15 @@ namespace CStutorial.Arrays
 			/* When arrays are created useing the new keyword (function), the elements are automatically populated witg the
 			 * types default value, e.g. 0 for value-type/primitive numbers, false for bool, '\x0000' for char, and null for
 			 * all reference types.
+			 * */
+
+			/* Default values
+			 * +----------------------+-------+
+			 * | Reference type       | null  |
+			 * | All numeric and enum | 0     |
+			 * | char                 | '\0'  |
+			 * | bool type            | false |
+			 * +----------------------+-------+
 			 * */
 
 			_OneDimensionalArray[0] = "Hello";

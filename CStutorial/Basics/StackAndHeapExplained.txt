@@ -25,7 +25,7 @@
   * With reference type local variables, the compiiler creates the creates the object, and stores it in the
   * heap, but the variable (reference) is stored in the stack.
   *
-  * I.e. local variable heap/stack;
+  * E.g. local variable heap/stack;
   *
   * void FunctionOne(object p1)
   * {
