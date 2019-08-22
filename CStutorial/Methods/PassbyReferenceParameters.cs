@@ -14,8 +14,8 @@ namespace CStutorial.Methods
 		public void ExecuteStandardFunc(int number)
 		{
 			/* The default approach used by c# when passing in an argument is pass-by-value,
-			 * which means that the compiler creates a copy of the argument, which is then
-			 * used by the method.
+			 * which means that the compiler creates a copy of the arguments value, which is
+			 * then placed inside a new storage location, which is then used by the method.
 			 * */
 
 			 /* The number variable now has a copy, so if we make any changes to number inside
@@ -61,8 +61,6 @@ namespace CStutorial.Methods
 			* +-----------+------------------------+
 		    * */
 
-		/*
-		 *  */
 
 		public void ExecuteRef(ref int number)
         {
@@ -85,7 +83,62 @@ namespace CStutorial.Methods
             */
         }
 
-        public void ExecuteOut(out int number)
+		/*
+		 * With pass-by-value, the compiler copies the VALUE and then places it inside a storage
+		 * location (memory space), i.e. the parameter becomes another slot in the memory.
+		 * 
+		 * Pass-by-reference actually takes the storage location of the original variable, and
+		 * doesn't create another storage location, instead creates an alias which has the
+		 * same storage location as the original variable (AlBahari).
+		 *  */
+
+		/*
+		 * E.g. pass-by-value
+		 * 
+		 * void FuncPBV(int f1)
+		 * {
+		 * }
+		 * 
+		 * main()
+		 * {
+		 *		int x = 10;
+		 *		FuncPBV(x);
+		 * }
+		 * 
+		 * +----------+-------+
+		 * | Mem_name | Loc   |
+		 * +----------+-------+
+		 * | x        | 10    |
+		 * +----------+-------+
+		 * | f1       | 10    | // creates new location, and copies the 'x' variables value of 10.
+		 * +----------+-------+
+		 * 
+		 * */
+
+		/*
+		 * E.g. pass-by-reference
+		 * 
+		 * void FuncPBR(ref int f1)
+		 * {
+		 * }
+		 * 
+		 * main()
+		 * {
+		 *		int x = 10;
+		 *		FuncPBR(ref x);
+		 * }
+		 * 
+		 * +----------+-------+
+		 * | Mem_name | Loc   |
+		 * +----------+-------+
+		 * | x        |       |
+		 * +----------+ 10    +
+		 * | f1       |       | // creates an aliea, shares the same location as the 'x' variable.
+		 * +----------+-------+
+		 * 
+		 * */
+
+		public void ExecuteOut(out int number)
         {
 			/* By default all arguments in C# is pass-by-value, but the using the out modifier
 			 * (keyword) we can now change it to pass-by-reference.
