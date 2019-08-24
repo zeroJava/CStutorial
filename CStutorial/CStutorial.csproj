@@ -47,7 +47,7 @@
     <Compile Include="Abstracts\Cat.cs" />
     <Compile Include="Arrays\Arraysexample.cs" />
     <Compile Include="Basics\BasicsStuff.cs" />
-    <Compile Include="Basics\MathematicalOperators.cs" />
+    <Compile Include="Basics\ExpressionNOperators.cs" />
     <Compile Include="Castings\Asclasseg.cs" />
     <Compile Include="Castings\Collections\CastCollDemo.cs" />
     <Compile Include="Castings\Collections\CastCollOneAClass.cs" />
@@ -82,8 +82,8 @@
     <Compile Include="Interfaces\IExample2.cs" />
     <Compile Include="Interfaces\IterfaceExampleClass.cs" />
     <Compile Include="List\Listexample.cs" />
-    <Compile Include="Methods\ParamaterArraysMethod.cs" />
-    <Compile Include="Methods\PassbyReferenceParameters.cs" />
+    <Compile Include="Basics\Methods\ParamaterArraysMethod.cs" />
+    <Compile Include="Basics\Methods\PassbyReferenceParameters.cs" />
     <Compile Include="Partialclass\Partialeg.cs" />
     <Compile Include="Partialclass\Partialeg2.cs" />
     <Compile Include="Polymorphisms\PolClass1.cs" />
@@ -113,10 +113,10 @@
     <Compile Include="Solid\SingleResponsibility\Dispalyclass.cs" />
     <Compile Include="Solid\SingleResponsibility\User.cs" />
     <Compile Include="Structs\Sructeg.cs" />
-    <Compile Include="Switches\Switchclass.cs" />
+    <Compile Include="Basics\Switches\Switchclass.cs" />
     <Compile Include="TaskMaster\Anagram.cs" />
     <Compile Include="Trees\TrNode.cs" />
-    <Compile Include="Variables\Variables.cs" />
+    <Compile Include="Basics\Variables\Variables.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
