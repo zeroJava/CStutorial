@@ -8,6 +8,16 @@ namespace CStutorial.Indexer
 {
     class IndexerEg
     {
+		/*
+		 * Indexer is a function in C# that allows the user to access an
+		 * internal collection within the class.
+		 * It looks and behaves like an array.
+		 * */
+
+		/*
+		 * When the indexer is compiled, the compiler converts internally
+		 * into two method called get_Item() and set_Item(int index, string value).
+		 * */
         public string[] array = new string[5];
         public string this[int index]
         {
