@@ -73,6 +73,7 @@
     <Compile Include="Generics\GenericInterfaceClass.cs" />
     <Compile Include="Generics\GenericMethods.cs" />
     <Compile Include="Indexer\IndexerEg.cs" />
+    <Compile Include="Indexer\IndexerExplained.cs" />
     <Compile Include="Inheritance\Class1.cs" />
     <Compile Include="Inheritance\Class2.cs" />
     <Compile Include="Inheritance\Methods\BaseClass.cs" />
@@ -112,6 +113,7 @@
     <Compile Include="Solid\OpenClosed\Truck.cs" />
     <Compile Include="Solid\SingleResponsibility\Dispalyclass.cs" />
     <Compile Include="Solid\SingleResponsibility\User.cs" />
+    <Compile Include="Statics\StaticEnglained.cs" />
     <Compile Include="Structs\Sructeg.cs" />
     <Compile Include="Basics\Switches\Switchclass.cs" />
     <Compile Include="TaskMaster\Anagram.cs" />
