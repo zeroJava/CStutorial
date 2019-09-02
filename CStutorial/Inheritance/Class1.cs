@@ -50,6 +50,59 @@ namespace CStutorial.Inheritance
             this.Age = Age;
         }
 
+		~Class1()	// Finalizer
+		{
+			/*
+			 * A finalizer is method that is executed during the compilers garbage
+			 * collection process, which the compiler cleans up unnecessary and
+			 * unreferenced objects.
+			 * 
+			 * The finalizer is an optional function, which we add to release
+			 * connected events and obects.
+			 * 
+			 * Unlike normal functions, the finalizer cannot be called in the code,
+			 * it's only called ny the garbage collector.
+			 * */
+
+			/*
+			 * To define a finalizer, we use a special syntax: '~', which we use
+			 * with a function with the same name as the class.
+			 * 
+			 * E.g.
+			 * ~Class()		// Define finalizer
+			 * {
+			 *		//  Do Not have empty finalizer.
+			 * }
+			 * 
+			 * When the garbage collector is running, and see that this class has
+			 * a garbage collector, the compiler will put into a finalizer queue,
+			 * and then execute first-in-first-out process.
+			 * 
+			 * */
+
+			/*
+			 * '~' syntax is actually a synthetic sugar, which actually overrides
+			 * the 'finalize()' function from the 'Object' class.
+			 * 
+			 * E.g.
+			 * 
+			 * ~Class()
+			 * {
+			 *		x = null;
+			 * }
+			 * 
+			 * the compiler converts it to the statement below.
+			 * 
+			 * protected override void finalize()
+			 * {
+			 *		x = null;
+			 *		base.Finalize();
+			 * }
+			 * 
+			 * */
+			Age = 0;
+		}
+
         public virtual void Display()
         {
             System.Console.WriteLine("Yo wagi in class 1");
