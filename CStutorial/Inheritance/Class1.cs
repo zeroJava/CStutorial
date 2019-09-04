@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CStutorial.Inheritance
 {
-    class Class1
+    public class Class1
     {
 		private int _defaultV;
 		private int _number = 5;

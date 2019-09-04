@@ -76,6 +76,7 @@
     <Compile Include="Indexer\IndexerExplained.cs" />
     <Compile Include="Inheritance\Class1.cs" />
     <Compile Include="Inheritance\Class2.cs" />
+    <Compile Include="Inheritance\Class3.cs" />
     <Compile Include="Inheritance\Methods\BaseClass.cs" />
     <Compile Include="Inheritance\Methods\SubClassOne.cs" />
     <Compile Include="Inheritance\Methods\SubClassTwo.cs" />
