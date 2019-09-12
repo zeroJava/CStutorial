@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CStutorial.Extensionmethod;
+using CStutorial.Statics;
 
 namespace CStutorial
 {
@@ -11,9 +12,9 @@ namespace CStutorial
     {
         static void Main(string[] args)
         {
-            // http://www.dotnetperls.com/collections
+			// http://www.dotnetperls.com/collections
 
-            /*CStutorial.Basics.BasicsStuff obj = new Basics.BasicsStuff(5);
+			/*CStutorial.Basics.BasicsStuff obj = new Basics.BasicsStuff(5);
             obj.Adding(100);
             obj.Universal = true;
             obj.Value_of_object();
@@ -22,19 +23,19 @@ namespace CStutorial
             obj.Universal = 1;
             obj.Value_of_object();*/
 
-            /*CStutorial.Flowcontrols.IfelseStatements ifstatment = new Flowcontrols.IfelseStatements("Hnery", 25);
+			/*CStutorial.Flowcontrols.IfelseStatements ifstatment = new Flowcontrols.IfelseStatements("Hnery", 25);
             ifstatment.CheckIfMatch("Gwady", 25);
             CStutorial.Flowcontrols.IfelseStatements statment2 = new Flowcontrols.IfelseStatements("Jane", 24);
             System.Console.WriteLine(ifstatment.Equals(statment2));*/
 
-            /*CStutorial.Flowcontrols.Switchstatement statement = new Flowcontrols.Switchstatement();
+			/*CStutorial.Flowcontrols.Switchstatement statement = new Flowcontrols.Switchstatement();
             statement.Fruit = "Apple";
             statement.CheckinRepo();*/
 
-            //CStutorial.Basics.MathematicalOperators.DisplayFunctionalities();
+			//CStutorial.Basics.MathematicalOperators.DisplayFunctionalities();
 
-            // ------------------------------------------ pass by reference happing here
-            /*int number = 5;
+			// ------------------------------------------ pass by reference happing here
+			/*int number = 5;
             int number2;
             CStutorial.Methods.PassbyReferenceParameters _passByRef = new Methods.PassbyReferenceParameters();
             _passByRef.ExecuteRef(ref number); // we have to use the keyword ref when invoking a method whose parameter has the ref keyword. 
@@ -42,68 +43,68 @@ namespace CStutorial
             Console.WriteLine(number.ToString());
             Console.WriteLine(number2.ToString());*/
 
-            // -------------------------------------------- | Parameter arrays method (varargs) | ---
+			// -------------------------------------------- | Parameter arrays method (varargs) | ---
 
-            // Methods.ParamaterArraysMethod.ListAllNames("John", "Mike", "MeHe", "Donkey");
+			// Methods.ParamaterArraysMethod.ListAllNames("John", "Mike", "MeHe", "Donkey");
 
-            // -------------------------------------------- | Indexer | ---
+			// -------------------------------------------- | Indexer | ---
 
-            /*CStutorial.Indexer.IndexerEg index = new Indexer.IndexerEg();
+			/*CStutorial.Indexer.IndexerEg index = new Indexer.IndexerEg();
             index.Adddata();
             System.Console.WriteLine(index[1]);
             index[1] = "earth";
             System.Console.WriteLine(index[1]);*/
 
-            // -------------------------------------------- | Partial | ---
+			// -------------------------------------------- | Partial | ---
 
-            /*CStutorial.Partialclass.Partialeg partial1 = new Partialclass.Partialeg();
+			/*CStutorial.Partialclass.Partialeg partial1 = new Partialclass.Partialeg();
             partial1.Name = "sigmund";
             partial1.Address = "Asg"; // These two properties have been written in different locations
             partial1.FirstLine();
             partial1.SecondLine(); // These two methods have been written in different locations */
 
-            /*CStutorial.Structs.Structeg stre = new Structs.Structeg();
+			/*CStutorial.Structs.Structeg stre = new Structs.Structeg();
             stre.Id = 0582;*/
 
-            //CStutorial.Abstracts.Animal cat = new CStutorial.Abstracts.Cat("Kitty", "Hello kitty");
+			//CStutorial.Abstracts.Animal cat = new CStutorial.Abstracts.Cat("Kitty", "Hello kitty");
 
-            /*CStutorial.Inheritance.Class2 _class2 = new Inheritance.Class2("John", 25);
+			/*CStutorial.Inheritance.Class2 _class2 = new Inheritance.Class2("John", 25);
             _class2.Display(); */
 
-            /*CStutorial.Switches.Switchclass switchclass = new Switches.Switchclass();
+			/*CStutorial.Switches.Switchclass switchclass = new Switches.Switchclass();
             switchclass.Value = 2;
             switchclass.ListOfEverything();*/
 
-            /*string str = "displat";
+			/*string str = "displat";
             str.Display();*/ // Extension method being used here
 
-            /*CStutorial.Delatges.DisplayData _display = new CStutorial.Delatges.DisplayData(Delatges.Delegateclass1.Method3);
+			/*CStutorial.Delatges.DisplayData _display = new CStutorial.Delatges.DisplayData(Delatges.Delegateclass1.Method3);
             _display("Jonathane Smyth");
 
             CStutorial.Delatges.Delegateclass2 _delegate = new Delatges.Delegateclass2();
             _delegate.Execute(); */ // delegates being used here
 
-            // ------------------------------------------------------- Collections
+			// ------------------------------------------------------- Collections
 
-            //Arrays.Arraysexample arrys = new Arrays.Arraysexample();
-            //List.Listexample list = new CStutorial.List.Listexample();
-            //Set.Setexample _set = new Set.Setexample();
-            //Dictionarys.Dictionaryexample _dictionary = new Dictionarys.Dictionaryexample();
+			//Arrays.Arraysexample arrys = new Arrays.Arraysexample();
+			//List.Listexample list = new CStutorial.List.Listexample();
+			//Set.Setexample _set = new Set.Setexample();
+			//Dictionarys.Dictionaryexample _dictionary = new Dictionarys.Dictionaryexample();
 
-            // ----------------------- solid principle -------------------------
+			// ----------------------- solid principle -------------------------
 
-            /*CStutorial.Solid.SingleResponsibility.User user1 = new Solid.SingleResponsibility.User(1, "JOHN SMITH", "LOWLAND");
+			/*CStutorial.Solid.SingleResponsibility.User user1 = new Solid.SingleResponsibility.User(1, "JOHN SMITH", "LOWLAND");
             CStutorial.Solid.SingleResponsibility.Dispalyclass.Print(user1);
             CStutorial.Solid.SingleResponsibility.Dispalyclass.Print(new Solid.SingleResponsibility.User(2, "FRANK LOW", "HIGHLAND"));*/
 
-            /*CStutorial.Solid.OpenClosed.Car car = new Solid.OpenClosed.Car();
+			/*CStutorial.Solid.OpenClosed.Car car = new Solid.OpenClosed.Car();
             CStutorial.Solid.OpenClosed.Motorcycle motorcycle = new Solid.OpenClosed.Motorcycle();
             CStutorial.Solid.OpenClosed.Truck truck = new Solid.OpenClosed.Truck();
             System.Console.WriteLine(CStutorial.Solid.OpenClosed.AutomobileValidator.CheckIfAutomobile(car));
             System.Console.WriteLine(CStutorial.Solid.OpenClosed.AutomobileValidator.CheckIfAutomobile(motorcycle));
             System.Console.WriteLine(CStutorial.Solid.OpenClosed.AutomobileValidator.CheckIfAutomobile(truck));*/
 
-            /*CStutorial.Solid.LiskovSubsitute.CarViolation supercarViolate = new Solid.LiskovSubsitute.SportsCarViolated(8, "sports");
+			/*CStutorial.Solid.LiskovSubsitute.CarViolation supercarViolate = new Solid.LiskovSubsitute.SportsCarViolated(8, "sports");
             supercarViolate.SetEnginePower();
             System.Console.WriteLine(supercarViolate.GetEngineSize() + " " + supercarViolate.GetWheelType() + "\n GetEnginePower " + supercarViolate.GetEnginePower()); // look at Getenginepower in SportsCarViolated
 
@@ -111,21 +112,26 @@ namespace CStutorial
             superLSP.SetEnginePower();
             System.Console.WriteLine(superLSP.GetEngineSize() + " " + superLSP.GetWheelType() + "\n GetEnginePower " + superLSP.GetEnginePower());*/ // look at GetEnginePower SportsCarLSP
 
-            /*CStutorial.Solid.DependencyInversion.ICar super = new Solid.DependencyInversion.Supercar();
+			/*CStutorial.Solid.DependencyInversion.ICar super = new Solid.DependencyInversion.Supercar();
             CStutorial.Solid.DependencyInversion.ICar saloon = new Solid.DependencyInversion.Saloon();
             CStutorial.Solid.DependencyInversion.Validator.Validate(super);
             CStutorial.Solid.DependencyInversion.Validator.Validate(saloon);*/
 
-            // --------------------------- | Inheritance methods | -------------------------------
+			// --------------------------- | Inheritance methods | -------------------------------
 
-            /*CStutorial.Inheritance.Methods.BaseClass _object1 = new Inheritance.Methods.SubClassTwo();
+			/*Inheritance.Methods.BaseClass _object1 = new Inheritance.Methods.SubClassTwo();
             _object1.MethodTwo();
 
-            CStutorial.Inheritance.Methods.BaseClass _obhect2 = new Inheritance.Methods.SubClassOne();
+            Inheritance.Methods.BaseClass _obhect2 = new Inheritance.Methods.SubClassOne();
             _obhect2.MethodOne(); // this object will use base class data type, and the methodone prevent late-binding.
 
-            CStutorial.Inheritance.Methods.SubClassOne _object3 = new Inheritance.Methods.SubClassOne();
+            Inheritance.Methods.SubClassOne _object3 = new Inheritance.Methods.SubClassOne();
             _object3.MethodOne();*/
+
+			Inheritance.InheritClass1 class1 = new Inheritance.InheritClass2("abstract method 2");
+			Inheritance.InheritClass2 class2 = new Inheritance.InheritClass2("method 2");
+			StaticRuntimeOverloading.OvaLoad(class1);
+			StaticRuntimeOverloading.OvaLoad(class2);
 
             // ------------------------------- | Task master | -----------------------------------
 
@@ -182,8 +188,8 @@ namespace CStutorial
 
             //CStutorial.Polymorphisms.PolClass4 _polclass4 = new Polymorphisms.PolClass4();
 
-            Castings.Collections.CastCollDemo demoll = new Castings.Collections.CastCollDemo();
-            demoll.Execute();
+            /*Castings.Collections.CastCollDemo demoll = new Castings.Collections.CastCollDemo();
+            demoll.Execute();*/
 
             System.Console.ReadKey();
         }

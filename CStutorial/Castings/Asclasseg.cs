@@ -49,8 +49,8 @@ namespace CStutorial.Castings
 			 * the class members (variables and methods).
 			 * */
 
-			Class2 c2Obj = new Class2("Upcasting");
-			Class1 c1Obj = c2Obj; // implict upcast
+			InheritClass2 c2Obj = new InheritClass2("Upcasting");
+			InheritClass1 c1Obj = c2Obj; // implict upcast
 
 			/*
 			 * Downcasting
@@ -66,9 +66,9 @@ namespace CStutorial.Castings
 			 * Sublcass s2 = (Basclass)b1; // explict downcast.
 			 * */
 
-			Class2 c2 = new Class2("Upcasting");
-			Class1 c1 = c2; // implicit upcast
-			Class2 c3 = (Class2)c1; // explicit downcast
+			InheritClass2 c2 = new InheritClass2("Upcasting");
+			InheritClass1 c1 = c2; // implicit upcast
+			InheritClass2 c3 = (InheritClass2)c1; // explicit downcast
 			// See here, we have tell the compiler explicitly to
 			// convert c1 and return a subclass type.
 		}

@@ -49,6 +49,7 @@
     <Compile Include="Basics\BasicsStuff.cs" />
     <Compile Include="Basics\ExpressionNOperators.cs" />
     <Compile Include="Castings\Asclasseg.cs" />
+    <Compile Include="Castings\BoxingUnboxingEx.cs" />
     <Compile Include="Castings\Collections\CastCollDemo.cs" />
     <Compile Include="Castings\Collections\CastCollOneAClass.cs" />
     <Compile Include="Castings\Collections\CastCollOneBClass.cs" />
@@ -74,12 +75,14 @@
     <Compile Include="Generics\GenericMethods.cs" />
     <Compile Include="Indexer\IndexerEg.cs" />
     <Compile Include="Indexer\IndexerExplained.cs" />
-    <Compile Include="Inheritance\Class1.cs" />
-    <Compile Include="Inheritance\Class2.cs" />
-    <Compile Include="Inheritance\Class3.cs" />
+    <Compile Include="Inheritance\InheritClass1.cs" />
+    <Compile Include="Inheritance\InheritClass2.cs" />
+    <Compile Include="Inheritance\InheritClass3.cs" />
     <Compile Include="Inheritance\Methods\BaseClass.cs" />
     <Compile Include="Inheritance\Methods\SubClassOne.cs" />
     <Compile Include="Inheritance\Methods\SubClassTwo.cs" />
+    <Compile Include="Inheritance\SealClass1.cs" />
+    <Compile Include="Inheritance\SealClass2.cs" />
     <Compile Include="Interfaces\IExample1.cs" />
     <Compile Include="Interfaces\IExample2.cs" />
     <Compile Include="Interfaces\IterfaceExampleClass.cs" />
@@ -115,6 +118,7 @@
     <Compile Include="Solid\SingleResponsibility\Dispalyclass.cs" />
     <Compile Include="Solid\SingleResponsibility\User.cs" />
     <Compile Include="Statics\StaticEnglained.cs" />
+    <Compile Include="Statics\StaticRuntimeOverloading.cs" />
     <Compile Include="Structs\Sructeg.cs" />
     <Compile Include="Basics\Switches\Switchclass.cs" />
     <Compile Include="TaskMaster\Anagram.cs" />

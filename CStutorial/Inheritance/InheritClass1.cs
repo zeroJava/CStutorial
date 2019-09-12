@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CStutorial.Inheritance
 {
-    public class Class1
+    public class InheritClass1
     {
 		private int _defaultV;
 		private int _number = 5;
@@ -18,39 +18,72 @@ namespace CStutorial.Inheritance
 		 * initialises the variables in the class.
 		 * */
 
-        public virtual string Name { get; set; }
-        public virtual int Age { get; set; }
-        public virtual string Address { get; set; }
+		/*
+		 * Because fields are initialised first, the question is, in in-
+		 * heritance, what is the order of initialisation.
+		 * 
+		 * When we create a new object, the field initialisation of the
+		 * object (i.e the subclass) is initialised first, then the base
+		 * keyword is called, before the base constructor is executed,
+		 * the base classs field are initialised.
+		 * 
+		 * E.g.
+		 * 
+		 * class BaseClass
+		 * {
+		 *		virtual int number { get; set; } = 5; // -3-
+		 *		
+		 *		BaseClass() // automatic constructor
+		 *		{
+		 *			// -4-
+		 *		}
+		 * }
+		 * 
+		 * class SubclassOne : BaseClass
+		 * {
+		 *		override int number { get; set } = 10; // -1-
+		 *		SubclassOne(int x)
+		 *		{
+		 *			// base() automatically base constructor called // -2-
+		 *			// rest of the operations executed -5-
+		 *		}
+		 * }
+		 * 
+		 * */
 
-		static Class1()
+		public virtual string Name { get; set; } = "Inheritance1";
+		public virtual string Address { get; set; } = "Address in inheritance 1";
+		public virtual int Age { get; set; } = 10;
+
+		static InheritClass1()
 		{
 			/*
-			 * A static constructor is basically a constructure that is used to
+			 * A static constructor is basically a constructor that is used to
 			 * initialise all static fields in the class.
 			 * 
-			 * A class can have only have one static constructor, and it needs to
-			 * be parameterless.
+			 * A class can have only have one static constructor, and it needs
+			 * to be parameterless.
 			 * */
 		}
 
-        public Class1()
+        public InheritClass1()
         {
             System.Console.WriteLine("Inside the Class1() constructor with no");
             System.Console.WriteLine(Name + " " + Age + " " + Address);
             Display();
         }
 
-        public Class1(string name) : this() // invoking the constructor above
+        public InheritClass1(string name) : this() // invoking the constructor above
         {
             this.Name = name;
         }
 
-        public Class1(string Name, int Age) : this(Name)
+        public InheritClass1(string Name, int Age) : this(Name)
         {
             this.Age = Age;
         }
 
-		~Class1()	// Finalizer
+		~InheritClass1()	// Finalizer
 		{
 			/*
 			 * A finalizer is method that is executed during the compilers garbage

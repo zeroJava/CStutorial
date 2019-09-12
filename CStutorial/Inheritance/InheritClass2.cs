@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CStutorial.Inheritance
 {
-	public class Class2 : Class1
+	public class InheritClass2 : InheritClass1
 	{
 		/*
 		 * A class can inherit non-private members from another
@@ -34,7 +34,11 @@ namespace CStutorial.Inheritance
 		 * statement.
 		 * */
 
-		public Class2(string name)
+		public override string Name { get; set; } = "Inheritance2";
+		public override string Address { get; set; } = "Address in inheritance 2";
+		public override int Age { get; set; } = 20;
+
+		public InheritClass2(string name)
 		{
 			/*
 			 * When this constructor is called, it also automatica-
@@ -47,10 +51,19 @@ namespace CStutorial.Inheritance
 			 * one of the constructors from the parent class using
 			 * the base statement.
 			 * */
+
+			/*
+			 * The base constructors from the parent class is not
+			 * inherited by the subclass, i.e. subclass won't inh-
+			 * erit the constructor from the parent class, which
+			 * it then overrides with it own version; instead the
+			 * subclass will have to create it's own constructors
+			 * which can call the constructor from the base class.
+			 * */
 		}
 
 		// base class is the equivalent to super() or super in java
-		public Class2(string Name, int Age) : base(Name, Age) // 
+		public InheritClass2(string Name, int Age) : base(Name, Age) // 
 		{
 			/*
 			 * When the parent

@@ -40,7 +40,7 @@ namespace CStutorial.Generics
              * */
         }
 
-        public static void DisplatGenricOfCertainType<X>(X value) where X : CStutorial.Inheritance.Class1
+        public static void DisplatGenricOfCertainType<X>(X value) where X : CStutorial.Inheritance.InheritClass1
         {
             System.Console.WriteLine("This generic method has a constraint put on"
                 + " our type-parameter, saying the type-parameter must be an"

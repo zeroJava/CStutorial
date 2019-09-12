@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CStutorial.Inheritance
 {
-	public class Class3 : Class2
+	public class InheritClass3 : InheritClass2
 	{
 		/*
 		 * If the parent class does not have default constructor
@@ -18,7 +18,7 @@ namespace CStutorial.Inheritance
 		 * statement.
 		 * */
 
-		public Class3() : base("")
+		public InheritClass3() : base("")
 		{
 			/*
 			 * If there isn't any default parameterless constructor
