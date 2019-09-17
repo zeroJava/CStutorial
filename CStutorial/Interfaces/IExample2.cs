@@ -8,9 +8,15 @@ namespace CStutorial.Interfaces
 {
     // Look at IExample1
 
-    interface IExample2
+    public interface IExample2 : IExample1
     {
-        void Method1();
-        void Method2();
+        /*
+         * Interfaces can inherit from another interface,
+         * but you won't be able to overrite the method,
+         * firstly because the method does not appear in
+         * the child interface, and secondly, it's still
+         * an iterface, som you won't be able to define
+         * the method. 
+         */
     }
 }

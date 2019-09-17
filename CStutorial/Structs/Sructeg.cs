@@ -28,7 +28,9 @@ namespace CStutorial.Structs
          * behind the code) sealed.
          *
          * Even though all structs inherit from object class, it
-         * Can Not inherit from any other class.
+         * Can Not inherit from any other class or structs.
+         *
+         * It can inherit from interface.
          *
          * 2) A struct cannot have a parameterless constructor,
          * because compiler adds a hidden one automatically, which
