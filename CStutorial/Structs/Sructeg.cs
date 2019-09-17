@@ -44,6 +44,9 @@ namespace CStutorial.Structs
          * 3) structs don't have field initialisers, as opposed to
          * classes which do; this means that fields are forced to
          * be initialised in the constructor.
+         * 
+         * If all the fields are not initialised in the constructor
+         * it throws a compiler error.
          *
          * 4) structs don't support finialisers.
          *

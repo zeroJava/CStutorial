@@ -16,9 +16,6 @@ namespace CStutorial.Interfaces
     public interface IExample1
     {
         // Interface do note hold variables.
-
-        int Number { get; set; }
-
         void Method1();
         void Method2();
         /* 

@@ -85,6 +85,8 @@
     <Compile Include="Inheritance\SealClass2.cs" />
     <Compile Include="Interfaces\IExample1.cs" />
     <Compile Include="Interfaces\IExample2.cs" />
+    <Compile Include="Interfaces\IExample3.cs" />
+    <Compile Include="Interfaces\InterfaceExampleClass2.cs" />
     <Compile Include="Interfaces\IterfaceExampleClass.cs" />
     <Compile Include="List\Listexample.cs" />
     <Compile Include="Basics\Methods\ParamaterArraysMethod.cs" />

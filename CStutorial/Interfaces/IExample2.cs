@@ -18,5 +18,7 @@ namespace CStutorial.Interfaces
          * an iterface, som you won't be able to define
          * the method. 
          */
+
+        int Number { get; set; }
     }
 }
