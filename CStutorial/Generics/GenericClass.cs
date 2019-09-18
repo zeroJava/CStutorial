@@ -6,8 +6,21 @@ using System.Threading.Tasks;
 
 namespace CStutorial.Generics
 {
-    class GenericClass<T>
+    public class GenericClass<T>
     {
+        /* Generic allows us to use type parameter which act a placeholder, 
+         * which gives us the option to add any data type we want when we 
+         * use it.
+         * 
+         * By adding a type-argument, we start to define the type of data
+         * generics can handle.
+         * */
+
+        /*
+         * GenericClass<T> is referred as an open-type.
+         * GenericClass<int> is referred as a close-type.
+         * At runtime all generic type instances become closed.
+         * */
         public T Property1 { get; set; }
         public T Property2 { get; set; }
 
@@ -15,10 +28,5 @@ namespace CStutorial.Generics
         {
             System.Console.WriteLine("Value of prop1 " + Property1 + " and prop2 " + Property2);
         }
-
-        /* generic allows us to use type parameter which act a placeholder, 
-         * which gives us the option to add any data type we want when we 
-         * use it. 
-         * */
     }
 }
