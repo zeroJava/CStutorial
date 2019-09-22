@@ -58,6 +58,7 @@
     <Compile Include="Castings\Collections\ICastCollOne.cs" />
     <Compile Include="Castings\Collections\ICastCollTwo.cs" />
     <Compile Include="Castings\Isclasseg.cs" />
+    <Compile Include="Covariance_Contravariance\Covariance.cs" />
     <Compile Include="Delatges\Delegateclass1.cs" />
     <Compile Include="Delatges\Delegateclass2.cs" />
     <Compile Include="Dictionarys\Dictionaryexample.cs" />
