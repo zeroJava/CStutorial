@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CStutorial.Generics;
 using CStutorial.Inheritance;
+using CStutorial.Interfaces;
 
 namespace CStutorial.Covariance_Contravariance
 {
@@ -13,14 +14,25 @@ namespace CStutorial.Covariance_Contravariance
         public void ConvarianceExample()
         {
             /*
-             * Convariance in generic means that a data-type
-             * with type-parameter with base can convert to
-             * a data-type of the same data type but with a
-             * subclass type-parameter.
+             * Covariance in generic means that a base data-type
+             * with base type-parameter can hold child data-type
+             * with a child type-parameter.
+             * 
+             * I.e.
+             * Basically covariance just means that, after marking
+             * the type-parameter with the 'out' keyword, or with a
+             * constraint, the compiler will check if the data-type
+             * of the variable is base data-type, and also check if
+             * the generic type-parameter is also the base type-par-
+             * ameter of the values generic.
+             * 
+             * E.g.
+             * IEnumrable<IExample1> covariance1 = new List<InterfaceExampleClass>();
+             * IEnumrable is the base of List.
+             * IExample1 is the base of InterfaceExampleClass.
+             * 
              * */
-
-            IGenericInterface<InheritClass2> eg1 = new GenericInterfaceClass2<InheritClass2>();
-            IGenericInterface<InheritClass1> converianceEg1 = eg1;
+            ICovariaceGeneric<IExample1> covariance1 = new CovarianceIml<InterfaceExampleClass>();
         }
 
         /*

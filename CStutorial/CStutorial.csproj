@@ -58,7 +58,9 @@
     <Compile Include="Castings\Collections\ICastCollOne.cs" />
     <Compile Include="Castings\Collections\ICastCollTwo.cs" />
     <Compile Include="Castings\Isclasseg.cs" />
+    <Compile Include="Covariance_Contravariance\CovarianceIml.cs" />
     <Compile Include="Covariance_Contravariance\Covariance.cs" />
+    <Compile Include="Covariance_Contravariance\ICovariaceGeneric.cs" />
     <Compile Include="Delatges\Delegateclass1.cs" />
     <Compile Include="Delatges\Delegateclass2.cs" />
     <Compile Include="Dictionarys\Dictionaryexample.cs" />
@@ -88,7 +90,7 @@
     <Compile Include="Interfaces\IExample2.cs" />
     <Compile Include="Interfaces\IExample3.cs" />
     <Compile Include="Interfaces\InterfaceExampleClass2.cs" />
-    <Compile Include="Interfaces\IterfaceExampleClass.cs" />
+    <Compile Include="Interfaces\InterfaceExampleClass.cs" />
     <Compile Include="List\Listexample.cs" />
     <Compile Include="Basics\Methods\ParamaterArraysMethod.cs" />
     <Compile Include="Basics\Methods\PassbyReferenceParameters.cs" />

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CStutorial.Interfaces
 {
-    public class InterfaceExampleClass2 : IterfaceExampleClass
+    public class InterfaceExampleClass2 : InterfaceExampleClass
     {
         public override void Method2()
         {

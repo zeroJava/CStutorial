@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CStutorial.Interfaces
 {
-    public class IterfaceExampleClass : IExample1, IExample3
+    public class InterfaceExampleClass : IExample1, IExample3
     {
         /* 
          * The method are being explictly inherited from the interface, 
