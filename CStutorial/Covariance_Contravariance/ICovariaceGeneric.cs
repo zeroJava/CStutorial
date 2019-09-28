@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CStutorial.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,11 +23,11 @@ namespace CStutorial.Covariance_Contravariance
          * 
          * I.e.
          * Basically covariance just means that, after marking
-         * the type-parameter with the 'out' keyword, or with a
-         * constraint, the compiler will check if the data-type
-         * of the variable is base data-type, and also check if
-         * the generic type-parameter is also the base type-par-
-         * ameter of the values generic.
+         * the type-parameter with the 'out' keyword, the
+         * compiler will check if the data-type of the variable
+         * is base data-type, and also check if the generic
+         * type-parameter is also the base type-parameter of the
+         * values generic.
          * 
          * E.g.
          * IEnumrable<IExample1> covariance1 = new List<InterfaceExampleClass>();
@@ -36,9 +37,15 @@ namespace CStutorial.Covariance_Contravariance
          * */
 
         /*
-         * Variance means that is can
+         * By default, dotnet framework does not enable cov-
+         * ariance and contravariance, so we have to able in
+         * explicting in the code by notifying the compiler.
+         * 
+         * To make custom generic types as covariant: 
+         * - Either by marking the generic type parameter in
+         *   the interface with the 'out' keyword.
+         * 
          * */
-
-        void GetCovarianceExampleObject();
+        void GetCovarianceExampleObject<TCov>(IStandardGen<TCov> covariance);
     }
 }

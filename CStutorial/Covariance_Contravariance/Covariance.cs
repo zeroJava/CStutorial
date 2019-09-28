@@ -20,11 +20,11 @@ namespace CStutorial.Covariance_Contravariance
              * 
              * I.e.
              * Basically covariance just means that, after marking
-             * the type-parameter with the 'out' keyword, or with a
-             * constraint, the compiler will check if the data-type
-             * of the variable is base data-type, and also check if
-             * the generic type-parameter is also the base type-par-
-             * ameter of the values generic.
+             * the type-parameter with the 'out' keyword, the
+             * compiler will check if the data-type of the variable
+             * is base data-type, and also check if the generic
+             * type-parameter is also the base type-parameter of the
+             * values generic.
              * 
              * E.g.
              * IEnumrable<IExample1> covariance1 = new List<InterfaceExampleClass>();
@@ -33,6 +33,10 @@ namespace CStutorial.Covariance_Contravariance
              * 
              * */
             ICovariaceGeneric<IExample1> covariance1 = new CovarianceIml<InterfaceExampleClass>();
+
+            //covariance1.GetCovarianceExampleObject(new IStandardGenIml<IExample2>());
+            //IStandardGen<IExample2> example1 = new IStandardGenIml<IExample2>();
+            //covariance1.GetCovarianceExampleObject(example1);
         }
 
         /*

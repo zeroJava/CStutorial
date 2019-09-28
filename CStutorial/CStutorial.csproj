@@ -60,7 +60,10 @@
     <Compile Include="Castings\Isclasseg.cs" />
     <Compile Include="Covariance_Contravariance\CovarianceIml.cs" />
     <Compile Include="Covariance_Contravariance\Covariance.cs" />
+    <Compile Include="Covariance_Contravariance\IContraVariance.cs" />
     <Compile Include="Covariance_Contravariance\ICovariaceGeneric.cs" />
+    <Compile Include="Covariance_Contravariance\IStandardGen.cs" />
+    <Compile Include="Covariance_Contravariance\IStandardGenIml.cs" />
     <Compile Include="Delatges\Delegateclass1.cs" />
     <Compile Include="Delatges\Delegateclass2.cs" />
     <Compile Include="Dictionarys\Dictionaryexample.cs" />

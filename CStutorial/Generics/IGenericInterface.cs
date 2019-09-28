@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CStutorial.Generics
 {
-    interface IGenericInterface<T>
+    public interface IGenericInterface<T>
     {
         /* Generics in iterface tell the compiler that data-type of the
          * type-parameter will be given when a class inherits the interface,
