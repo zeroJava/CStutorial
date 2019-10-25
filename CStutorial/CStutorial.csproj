@@ -66,6 +66,7 @@
     <Compile Include="Covariance_Contravariance\IStandardGenIml.cs" />
     <Compile Include="Delatges\Delegateclass1.cs" />
     <Compile Include="Delatges\Delegateclass2.cs" />
+    <Compile Include="Delatges\DelegateExp1.cs" />
     <Compile Include="Dictionarys\Dictionaryexample.cs" />
     <Compile Include="Event\EventExample2.cs" />
     <Compile Include="Event\EventsExample1.cs" />
