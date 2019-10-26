@@ -55,22 +55,88 @@ namespace CStutorial.Delatges
 			 * the order they've been added.
 			 * */
 
+			DelegateExampleOne deMultiOne = new DelegateExampleOne(MulitCastOne);
+			deMultiOne += MulitCastTwo;
+
 			/*
 			 * Adding is done by subscribing (+=), whereas
 			 * removing is done by unsubscribing (-=).
 			 * */
-			DelegateExampleOne deMultiOne = new DelegateExampleOne(MulitCastOne);
-			deMultiOne += MulitCastTwo;
+
+			/*
+			 * The delegate below will work, and not throw an
+			 * null expection.
+			 * I will explain why.
+			 * */
+
+			/*
+			 * Delegates are immutable, meaning the objects
+			 * data can be changed one an instance has been
+			 * created.
+			 * 
+			 * Becuase delegates are immutable, when we the
+			 * '+=' next to a delegate variable, the '+='
+			 * is actually creating another delegate object.
+			 * */
+
+			DelegateExampleOne deMultiTwo = null;
+			deMultiTwo += MulitCastOne;
+
+			/*
+			 * When method from an instance variable (object)
+			 * is assigned to a delegate, the delegate holds
+			 * a reference to the method, but also a reference
+			 * of the object.
+			 * */
+		}
+
+		public void MethodExampleTwo()
+		{
+			/*
+			 * Delegates support generics.
+			 * */
+
+			/*
+			 * C# has a predefine delegates type, with delegate
+			 * method signatures the support upto 16 generic 
+			 * parameters.
+			 * 
+			 * The predefined generic delegates are 'action' and
+			 * 'func'.
+			 * 
+			 * 'action' delegate only accepts methods that are
+			 * void.
+			 * 
+			 * 'func' delegate only accepts methods that return
+			 * a value. 
+			 * 
+			 * The func delegates last generic type-parameter is
+			 * the return type the func delegate expects from the
+			 * methods will assign to.
+			 * */
+
+			Action<int> actionOne = MultiCastActionOne;
+			Func<int, string> funcOne = MultiCastFuncOne;
 		}
 
 		private void MulitCastOne(int paramOne, string paramTwo)
 		{
-			//
+			Console.WriteLine("Multi Cast One.");
 		}
 
-		public void MulitCastTwo(int paramOne, string paramTwo)
+		private void MulitCastTwo(int paramOne, string paramTwo)
 		{
+			Console.WriteLine("Multi Cat Two.");
+		}
 
+		private void MultiCastActionOne(int number)
+		{
+			Console.WriteLine(number);
+		}
+
+		private string MultiCastFuncOne(int number)
+		{
+			return string.Empty;
 		}
 	}
 }
