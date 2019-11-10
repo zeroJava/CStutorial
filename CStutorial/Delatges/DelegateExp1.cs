@@ -14,7 +14,7 @@ namespace CStutorial.Delatges
 	 * 
 	 * In others words, a delegate is basically just a pla-
 	 * ceholder that holds the location of a method with the
-	 * same method signature, which it texecutes when the
+	 * same method signature, which it executes when the
 	 * delegate objects calls the invoke function.
 	 * 
 	 * E.g.
@@ -57,6 +57,7 @@ namespace CStutorial.Delatges
 
 			DelegateExampleOne deMultiOne = new DelegateExampleOne(MulitCastOne);
 			deMultiOne += MulitCastTwo;
+			deMultiOne += null; // create new object with no refrence.
 
 			/*
 			 * Adding is done by subscribing (+=), whereas
@@ -71,8 +72,8 @@ namespace CStutorial.Delatges
 
 			/*
 			 * Delegates are immutable, meaning the objects
-			 * data can be changed one an instance has been
-			 * created.
+			 * data can not be changed one an instance has
+			 * been created.
 			 * 
 			 * Becuase delegates are immutable, when we the
 			 * '+=' next to a delegate variable, the '+='
@@ -115,8 +116,8 @@ namespace CStutorial.Delatges
 			 * methods will assign to.
 			 * */
 
-			Action<int> actionOne = MultiCastActionOne;
-			Func<int, string> funcOne = MultiCastFuncOne;
+			Action<int> actionOne = DelActionOne;
+			Func<int, string> funcOne = DelFuncOne;
 		}
 
 		private void MulitCastOne(int paramOne, string paramTwo)
@@ -129,12 +130,12 @@ namespace CStutorial.Delatges
 			Console.WriteLine("Multi Cat Two.");
 		}
 
-		private void MultiCastActionOne(int number)
+		private void DelActionOne(int number)
 		{
 			Console.WriteLine(number);
 		}
 
-		private string MultiCastFuncOne(int number)
+		private string DelFuncOne(int number)
 		{
 			return string.Empty;
 		}

@@ -70,6 +70,7 @@
     <Compile Include="Delatges\DelegateCovarianceEx.cs" />
     <Compile Include="Delatges\DelegateExp1.cs" />
     <Compile Include="Dictionarys\Dictionaryexample.cs" />
+    <Compile Include="Event\EventEx1.cs" />
     <Compile Include="Event\EventExample2.cs" />
     <Compile Include="Event\EventsExample1.cs" />
     <Compile Include="Event\ExampleHnadlerArgs.cs" />
