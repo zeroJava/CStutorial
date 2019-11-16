@@ -98,6 +98,7 @@
     <Compile Include="Interfaces\IExample3.cs" />
     <Compile Include="Interfaces\InterfaceExampleClass2.cs" />
     <Compile Include="Interfaces\InterfaceExampleClass.cs" />
+    <Compile Include="LamdaExpressions\LambdaEx1.cs" />
     <Compile Include="List\Listexample.cs" />
     <Compile Include="Basics\Methods\ParamaterArraysMethod.cs" />
     <Compile Include="Basics\Methods\PassbyReferenceParameters.cs" />

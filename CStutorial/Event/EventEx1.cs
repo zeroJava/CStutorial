@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 namespace CStutorial.Event
 {
 	/*
+	 * This is an entension of delegates,please
+	 * start from DelegateEx1.cs in delegate.
+	 * */
+
+	/*
 	 * An event behaves as an extension to the
 	 * delegates, in the sense that we need to
 	 * delagetes to use events; no delegates no
