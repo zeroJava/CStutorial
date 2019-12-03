@@ -13,27 +13,28 @@ namespace CStutorial.EnumerationIterations
 	public class IteratorEx1
 	{
 		/*
-		 * An iterator is a method, property or indexer,
-		 * which contains a yield statement. 
+		 * An iterator is a method, property or
+		 * indexer, which contains a yield
+		 * statement. 
 		 * */
 		
 		/*
-		 * using yield marks the method as an iterator,
-		 * which returns a ienumrable object.
+		 * using yield marks the method as an
+		 * iterator, which returns a ienumrable
+		 * object.
 		 * 
-		 * Behind the scene, when yield is used, c# create
-		 * a hidden ienumerable class.
+		 * Behind the scene, when yield is used,
+		 * c# create a hidden ienumerable class.
 		 * */
 
-		/* An itertor method goes through a collection,
-		 * and then behind the scene constructs and
-		 * return an ienumerable object, which is only
-		 * possible using he yield statement.
+		/* An itertor means something that will
+		 * let you traverse through the collection
+		 * of items.
 		 * */
 
 		/*
-		 * An iterator must return either an IEnumerable
-		 * or IEnumerator.
+		 * An iterator must return either an
+		 * IEnumerable or IEnumerator.
 		 * */
 
 		public void ExampleExecute()
@@ -47,13 +48,14 @@ namespace CStutorial.EnumerationIterations
 		private IEnumerable<int> IteratorExample1()
 		{
 			/*
-			 * Adding yield to make the method into an iterator.
+			 * Adding yield to make the method into an
+			 * iterator.
 			 * */
 
 			/*
-			 * Iterators, when compiled, is converted to a
-			 * private class that implements both the
-			 * IEnumerable and IEnumerator.
+			 * Iterators, when compiled, is converted
+			 * to a private class that implements both
+			 * the IEnumerable and IEnumerator.
 			 * */
 
 			yield return 1;
@@ -66,9 +68,52 @@ namespace CStutorial.EnumerationIterations
 		private static System.Collections.Generic.IEnumerable<int> MakeIterator()
 		{
 			Console.WriteLine("Inside make iterator");
+
+			/*
+			 * Note
+			 *
+			 * When execute an iterator, the method does
+			 * NOT create collection, and return the
+			 * whole collection.
+			 * 
+			 * Instead, create a state machine, which
+			 * repeatlty goes into the method and returns
+			 * a value.
+			 * */
+
+			/*
+			 * Iterator is used by forach loops, so for
+			 * every iteration, the compiler comes into
+			 * this method, and then perform a any operation
+			 * until reaches a yield statement.
+			 * */
+
+			/*
+			 * When it reaches a yield statement, the
+			 * compiler saves location of the yield
+			 * statement location, and leaved the method
+			 * with the value.
+			 * */
+
+			/*
+			 * During the next iteration, the compiler
+			 * being from the where it left of during
+			 * the previous iteration.
+			 * */
+			
+
+			// During the first iteration, the copiler
+			// will execute this.
 			Console.WriteLine("1");
 			yield return 1;
 
+			// Once we reach the yield statement, the
+			// compiler will save the position, and
+			// return the value 1.
+
+			// When the foreach executes a next cycle
+			// the compiler will start from the line
+			// writeline(2). 
 			Console.WriteLine("2");
 			yield return 2;
 
@@ -83,6 +128,9 @@ namespace CStutorial.EnumerationIterations
 
 			Console.WriteLine("32");
 			yield return 32;
+
+			// Also when using the yield return statment,
+			// we cannot use the normal return statement
 		}
 
 		private IEnumerable<int> IteratorExample2()
