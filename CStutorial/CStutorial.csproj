@@ -104,6 +104,7 @@
     <Compile Include="List\Listexample.cs" />
     <Compile Include="Basics\Methods\ParamaterArraysMethod.cs" />
     <Compile Include="Basics\Methods\PassbyReferenceParameters.cs" />
+    <Compile Include="Nullables\NullableEx1.cs" />
     <Compile Include="Partialclass\Partialeg.cs" />
     <Compile Include="Partialclass\Partialeg2.cs" />
     <Compile Include="Polymorphisms\PolClass1.cs" />
