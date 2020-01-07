@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.CSharp.RuntimeBinder;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,31 +32,68 @@ namespace CStutorial.Dynamics
 
         public void ExecuteDynamicExample()
         {
-            /*
-             * In C#, we have a function that tells the
-             * compiler to ignore all members for this
-             * variable, and wait until run-time to bind.
-             * 
-             * This is know a Dynamic-Binding, which is
-             * activated by using the dynamic keyword.
-             * */
-
-            dynamic dynamic1 = new InnerDynamicEx1();
-            int number = dynamic1.GetMeANumber();
             try
             {
                 /*
-                 * Dynamic-Binding allows the compiler to
-                 * ignore the member assigned to the var-
-                 * iable, and waits for the binding to
-                 * happen at run-time.
+                 * In C#, we have a function that tells
+                 * the compiler to ignore all members for
+                 * this variable, and wait until run-time
+                 * to bind.
+                 * 
+                 * This is know a Dynamic-Binding, which
+                 * is activated by using the dynamic
+                 * keyword.
                  * */
+
+                dynamic dynamic1 = new InnerDynamicEx1();
+
+                /*
+                 * Below the line of code will be ignored
+                 * by the compiler, when compiled.
+                 * 
+                 * Instead, the compiler will wait during
+                 * runtime to see if the GetMeAString
+                 * existing, and return the value.
+                 * */
+                int number = dynamic1.GetMeANumber();
                 string str = dynamic1.GetMeAString();
             }
-            catch (Exception exception)
+            catch (RuntimeBinderException dynamicBindingException)
             {
-                Console.WriteLine("Error when using dynamic.");
+                Console.WriteLine(string.Format("Error when using dynamic.\n{0}", dynamicBindingException.Message));
             }
+        }
+
+        public void ExecuteRuntimeBinderExceptionExample()
+        {
+            try
+            {
+                dynamic dynamic1 = new InnerDynamicEx1();
+                int number = dynamic1.GetMeANumber();
+                string str = dynamic1.GetMeAString();
+            }
+            catch (RuntimeBinderException dynamicBindingException)
+            {
+                /*
+                 * If during run-time, the dynamic run-
+                 * time-language (DLR) cannot find any
+                 * of the members specified in the code,
+                 * it will throw an exception.
+                 * 
+                 * The exception that is thrown, is the
+                 * RuntimeBinderException. 
+                 * 
+                 * The exception is similar to compiler
+                 * error we normally ecounter when there's
+                 * no matching method or property.
+                 * */
+                Console.WriteLine(string.Format("Error when using dynamic.\n{0}", dynamicBindingException.Message));
+            }
+        }
+
+        public void ExecuteCustomDynamicExample()
+        {
+
         }
 
         protected class InnerDynamicEx1
