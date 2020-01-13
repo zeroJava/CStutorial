@@ -38,6 +38,10 @@ namespace CStutorial.Covariance_Contravariance
              * 
              * */
 
+            /*
+             * ICoveriance has more notes.
+             * */
+
             ICovariance<IExample1> covariance1 = new CovarianceAndContravarianceImpl<InterfaceExampleClass>();
         }
 
@@ -45,15 +49,19 @@ namespace CStutorial.Covariance_Contravariance
         {
             /*
              * Contravariance is the opposite of covariance, which co-
-             * nvert a parent type-parameter to a sub- class data-type
+             * nverts a parent type-parameter to a subclass data-type
              * with a sublclass generic type-parameter.
              * 
              * I.e.
              * Basically covariance just means that, after marking the
              * interfaces type-parameter with the 'in' keyword, the co-
-             * mpiler will check if the check if the generic type-par-
-             * ameter is the child type-parameter of the values generic.
+             * mpiler will check if the generic type-parameter is the
+             * child type-parameter of the values generic.
              * 
+             * */
+
+            /*
+             * IContraveriance has more notes.
              * */
 
             CovarianceAndContravarianceImpl<IExample1> covariance1 = new CovarianceAndContravarianceImpl<IExample1>();
