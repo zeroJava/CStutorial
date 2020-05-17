@@ -48,3 +48,6 @@ Temporary Items
 
 \.vscode/
 *.ide-shm
+
+# Solution file
+.sln
