@@ -50,4 +50,4 @@ Temporary Items
 *.ide-shm
 
 # Solution file
-.sln
+*.sln
