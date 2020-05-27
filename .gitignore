@@ -60,3 +60,9 @@ obj/
 
 # Ignore everything CStutorial
 CStutorial/CStutorial.csproj
+*.cache
+*.cache
+*.cache
+*.ide-wal
+*.ide
+.vs/CStutorial/v16/.suo
