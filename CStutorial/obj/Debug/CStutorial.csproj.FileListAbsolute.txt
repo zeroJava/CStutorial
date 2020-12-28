@@ -4,3 +4,10 @@ C:\Users\Abu\Documents\Programming\C#\CStutorial\CStutorial\bin\Debug\CStutorial
 C:\Users\Abu\Documents\Programming\C#\CStutorial\CStutorial\obj\Debug\CStutorial.csprojAssemblyReference.cache
 C:\Users\Abu\Documents\Programming\C#\CStutorial\CStutorial\obj\Debug\CStutorial.exe
 C:\Users\Abu\Documents\Programming\C#\CStutorial\CStutorial\obj\Debug\CStutorial.pdb
+C:\Users\zero\Documents\Programming\C#\CStutorial\CStutorial\bin\Debug\CStutorial.exe.config
+C:\Users\zero\Documents\Programming\C#\CStutorial\CStutorial\bin\Debug\CStutorial.exe
+C:\Users\zero\Documents\Programming\C#\CStutorial\CStutorial\bin\Debug\CStutorial.pdb
+C:\Users\zero\Documents\Programming\C#\CStutorial\CStutorial\obj\Debug\CStutorial.csprojAssemblyReference.cache
+C:\Users\zero\Documents\Programming\C#\CStutorial\CStutorial\obj\Debug\CStutorial.csproj.CoreCompileInputs.cache
+C:\Users\zero\Documents\Programming\C#\CStutorial\CStutorial\obj\Debug\CStutorial.exe
+C:\Users\zero\Documents\Programming\C#\CStutorial\CStutorial\obj\Debug\CStutorial.pdb

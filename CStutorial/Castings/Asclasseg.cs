@@ -9,7 +9,7 @@ namespace CStutorial.Castings
 {
 	/*
 	 * When casting an object from one type to another
-	 * type, the comiler is doing a reference conversion
+	 * type, the compiler is doing a reference conversion
 	 * up or down the class heirachy know as upcasting
 	 * and downcasting.
 	 * */
