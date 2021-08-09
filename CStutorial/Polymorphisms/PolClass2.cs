@@ -16,7 +16,7 @@ namespace CStutorial.Polymorphisms
 
         public override void PolMethod1()
         {
-            System.Console.WriteLine("PolMethod1: ::PolClass2:: ::Overrieded::.");
+            System.Console.WriteLine("PolMethod1: ::PolClass2:: ::Overrided::.");
         }
 
         public new int PolMethod2()
