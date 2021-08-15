@@ -128,10 +128,10 @@ namespace CStutorial
             Inheritance.Methods.SubClassOne _object3 = new Inheritance.Methods.SubClassOne();
             _object3.MethodOne();*/
 
-			Inheritance.InheritClass1 class1 = new Inheritance.InheritClass2("abstract method 2");
-			Inheritance.InheritClass2 class2 = new Inheritance.InheritClass2("method 2");
-			StaticRuntimeOverloading.OvaLoad(class1);
-			StaticRuntimeOverloading.OvaLoad(class2);
+			//Inheritance.InheritClass1 class1 = new Inheritance.InheritClass2("abstract method 2");
+			//Inheritance.InheritClass2 class2 = new Inheritance.InheritClass2("method 2");
+			//StaticRuntimeOverloading.OvaLoad(class1);
+			//StaticRuntimeOverloading.OvaLoad(class2);
 
             // ------------------------------- | Task master | -----------------------------------
 
@@ -190,6 +190,10 @@ namespace CStutorial
 
             /*Castings.Collections.CastCollDemo demoll = new Castings.Collections.CastCollDemo();
             demoll.Execute();*/
+
+            // ------------------------------ | Yield | ---------------------------------------
+
+            Yield.YieldEx.ExecuteYieldTest();
 
             System.Console.ReadKey();
         }

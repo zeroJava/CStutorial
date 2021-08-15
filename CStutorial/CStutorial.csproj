@@ -142,6 +142,7 @@
     <Compile Include="TaskMaster\Anagram.cs" />
     <Compile Include="Trees\TrNode.cs" />
     <Compile Include="Basics\Variables\Variables.cs" />
+    <Compile Include="Yield\YieldEx.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

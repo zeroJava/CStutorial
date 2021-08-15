@@ -10,6 +10,13 @@ namespace CStutorial.EnumerationIterations
 	 * Please read enumerator.
 	 * */
 
+	/*
+	 * This link shows how the compiler compiles the
+	 * yield blocks to code.
+	 * 
+	 * https://csharpindepth.com/articles/IteratorBlockImplementation
+	 */
+
 	public class IteratorEx1
 	{
 		/*
