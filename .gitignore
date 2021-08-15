@@ -66,3 +66,4 @@ CStutorial/CStutorial.csproj
 *.ide-wal
 *.ide
 .vs/CStutorial/v16/.suo
+*.pdb
