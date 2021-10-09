@@ -187,7 +187,7 @@ namespace CStutorial.Basics
 			Console.WriteLine($"\nBitwise XOR operator -");
 			Console.WriteLine($"rt: {result3} = {Convert.ToString(result3, 2)}");
 
-			uint x = 0b_1100_1001_0000_0000_0000_0000_0001_0001;
+			uint x = 0b_1101_1111;
 
 			Console.WriteLine($"\nx: {x} = {Convert.ToString(x, 2)}");
 
