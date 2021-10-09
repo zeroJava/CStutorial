@@ -10,11 +10,11 @@ namespace CStutorial
 {
     class Program
     {
-        static void Main(string[] args)
+		static void Main(string[] args)
         {
-			// http://www.dotnetperls.com/collections
+            // http://www.dotnetperls.com/collections
 
-			/*CStutorial.Basics.BasicsStuff obj = new Basics.BasicsStuff(5);
+            /*CStutorial.Basics.BasicsStuff obj = new Basics.BasicsStuff(5);
             obj.Adding(100);
             obj.Universal = true;
             obj.Value_of_object();
@@ -22,6 +22,9 @@ namespace CStutorial
             obj.Value_of_object();
             obj.Universal = 1;
             obj.Value_of_object();*/
+
+            //CStutorial.Basics.ExpressionNOperators.ConditionalOperator();
+            CStutorial.Basics.ExpressionNOperators.BitwiseOperator();
 
 			/*CStutorial.Flowcontrols.IfelseStatements ifstatment = new Flowcontrols.IfelseStatements("Hnery", 25);
             ifstatment.CheckIfMatch("Gwady", 25);
@@ -193,7 +196,7 @@ namespace CStutorial
 
             // ------------------------------ | Yield | ---------------------------------------
 
-            Yield.YieldEx.ExecuteYieldTest();
+            //Yield.YieldEx.ExecuteYieldTest();
 
             System.Console.ReadKey();
         }

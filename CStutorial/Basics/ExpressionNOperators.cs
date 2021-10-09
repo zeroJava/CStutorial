@@ -138,5 +138,45 @@ namespace CStutorial.Basics
             System.Console.WriteLine("number : " + nubmer2);
             System.Console.WriteLine("--number : " + --nubmer2);
         }
+
+		public static void ConditionalOperator()
+		{
+			int rValOne = GetRandonValue(10);
+			int rValTwo = GetRandonValue(10);
+
+			/*
+			 * The AND conditional operator outputs a true if both inputs are true.
+			 * */
+			Console.WriteLine($"AND operator: {rValOne == rValTwo && true}");
+
+			/*
+			 * The OR conditional operator outputs a true if one of the inputs is true.
+			 * */
+			Console.WriteLine($"OR operator: {rValOne == rValTwo || true}");
+		}
+
+		public static void BitwiseOperator()
+		{
+			bool rValOne = GetRandonValue(10) == 4;
+			bool rValTwo = GetRandonValue(10) == 8;
+			int rValThree = GetRandonValue(5);
+
+			Console.WriteLine($"Bitwise AND operator - r1: {rValOne}, " +
+				$"r2: {rValTwo}, " +
+				$"r3: {rValThree}, " +
+				$"result = {rValOne & rValTwo & rValThree == 3}");
+
+			Console.WriteLine($"Bitwise OR operator - r1: {rValOne}, " +
+				$"r2: {rValTwo}, " +
+				$"r3: {rValThree}, " +
+				$"result = {rValOne | rValTwo | rValThree == 3}");
+		}
+
+		private static int GetRandonValue(int maxvalue)
+		{
+			int rValOne = new Random().Next(maxvalue);
+			System.Threading.Thread.Sleep(1000);
+			return rValOne;
+		}
     }
 }
