@@ -141,8 +141,8 @@ namespace CStutorial.Basics
 
 		public static void ConditionalOperator()
 		{
-			int rValOne = GetRandonValue(10);
-			int rValTwo = GetRandonValue(10);
+			int rValOne = GetRandonValue(10, 20);
+			int rValTwo = GetRandonValue(10, 20);
 
 			/*
 			 * The AND conditional operator outputs a true if both inputs are true.
@@ -155,28 +155,49 @@ namespace CStutorial.Basics
 			Console.WriteLine($"OR operator: {rValOne == rValTwo || true}");
 		}
 
-		public static void BitwiseOperator()
+		private static int GetRandonValue(int minvalue, int maxvalue)
 		{
-			bool rValOne = GetRandonValue(10) == 4;
-			bool rValTwo = GetRandonValue(10) == 8;
-			int rValThree = GetRandonValue(5);
-
-			Console.WriteLine($"Bitwise AND operator - r1: {rValOne}, " +
-				$"r2: {rValTwo}, " +
-				$"r3: {rValThree}, " +
-				$"result = {rValOne & rValTwo & rValThree == 3}");
-
-			Console.WriteLine($"Bitwise OR operator - r1: {rValOne}, " +
-				$"r2: {rValTwo}, " +
-				$"r3: {rValThree}, " +
-				$"result = {rValOne | rValTwo | rValThree == 3}");
-		}
-
-		private static int GetRandonValue(int maxvalue)
-		{
-			int rValOne = new Random().Next(maxvalue);
+			int rValOne = new Random().Next(minvalue, maxvalue);
 			System.Threading.Thread.Sleep(1000);
 			return rValOne;
+		}
+
+		public static void BitwiseOperator()
+		{
+			/*
+			 * The bitwise operator is used to compare the individual bit in the integer
+			 * type variable.
+			 * */
+
+			int vOne = 10000;
+			int vTwo = 15000;
+
+			Console.WriteLine($"r1: {vOne} = {Convert.ToString(vOne, 2)}");
+			Console.WriteLine($"r2: {vTwo} = {Convert.ToString(vTwo, 2)}");
+
+			var result1 = vOne & vTwo;
+			Console.WriteLine($"\nBitwise AND operator -");
+			Console.WriteLine($"rt: {result1} = {Convert.ToString(result1, 2)}");
+
+			var result2 = vOne | vTwo;
+			Console.WriteLine($"\nBitwise OR operator -");
+			Console.WriteLine($"rt: {result2} = {Convert.ToString(result2, 2)}");
+
+			var result3 = vOne ^ vTwo;
+			Console.WriteLine($"\nBitwise XOR operator -");
+			Console.WriteLine($"rt: {result3} = {Convert.ToString(result3, 2)}");
+
+			uint x = 0b_1100_1001_0000_0000_0000_0000_0001_0001;
+
+			Console.WriteLine($"\nx: {x} = {Convert.ToString(x, 2)}");
+
+			var result4 = x << 2;
+			Console.WriteLine($"\nBitwise left shift operator -");
+			Console.WriteLine($"rt: {result4} = {Convert.ToString(result4, 2)}");
+
+			var result5 = x >> 2;
+			Console.WriteLine($"\nBitwise right shift operator -");
+			Console.WriteLine($"rt: {result5} = {Convert.ToString(result5, 2)}");
 		}
     }
 }
