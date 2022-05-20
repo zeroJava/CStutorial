@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CStutorial</RootNamespace>
     <AssemblyName>CStutorial</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -137,6 +138,11 @@
     <Compile Include="Solid\SingleResponsibility\User.cs" />
     <Compile Include="Statics\StaticEnglained.cs" />
     <Compile Include="Statics\StaticRuntimeOverloading.cs" />
+    <Compile Include="StreamIO\AdapterStreamTypeEg.cs" />
+    <Compile Include="StreamIO\BackstoreStreamTypeEg.cs" />
+    <Compile Include="StreamIO\DecoratorStreamTypeEg.cs" />
+    <Compile Include="StreamIO\StreamEg.cs" />
+    <Compile Include="StreamIO\StrmAsyncEg.cs" />
     <Compile Include="Structs\Sructeg.cs" />
     <Compile Include="Basics\Switches\Switchclass.cs" />
     <Compile Include="TaskMaster\Anagram.cs" />
@@ -159,6 +165,7 @@
     <Content Include="Solid\OpenClosed\Open closed.txt" />
     <Content Include="Solid\SingleResponsibility\Single Resposibility.txt" />
     <Content Include="Solid\TextFile1.txt" />
+    <Content Include="StreamIO\StreamTest.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

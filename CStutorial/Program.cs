@@ -8,32 +8,11 @@ using CStutorial.Statics;
 
 namespace CStutorial
 {
-    class Program
-    {
+	class Program
+	{
 		static void Main(string[] args)
-        {
-            // http://www.dotnetperls.com/collections
-
-            /*CStutorial.Basics.BasicsStuff obj = new Basics.BasicsStuff(5);
-            obj.Adding(100);
-            obj.Universal = true;
-            obj.Value_of_object();
-            obj.Universal = "String";
-            obj.Value_of_object();
-            obj.Universal = 1;
-            obj.Value_of_object();*/
-
-            //CStutorial.Basics.ExpressionNOperators.ConditionalOperator();
-            CStutorial.Basics.ExpressionNOperators.BitwiseOperator();
-
-			/*CStutorial.Flowcontrols.IfelseStatements ifstatment = new Flowcontrols.IfelseStatements("Hnery", 25);
-            ifstatment.CheckIfMatch("Gwady", 25);
-            CStutorial.Flowcontrols.IfelseStatements statment2 = new Flowcontrols.IfelseStatements("Jane", 24);
-            System.Console.WriteLine(ifstatment.Equals(statment2));*/
-
-			/*CStutorial.Flowcontrols.Switchstatement statement = new Flowcontrols.Switchstatement();
-            statement.Fruit = "Apple";
-            statement.CheckinRepo();*/
+		{
+			// http://www.dotnetperls.com/collections
 
 			//CStutorial.Basics.MathematicalOperators.DisplayFunctionalities();
 
@@ -136,69 +115,75 @@ namespace CStutorial
 			//StaticRuntimeOverloading.OvaLoad(class1);
 			//StaticRuntimeOverloading.OvaLoad(class2);
 
-            // ------------------------------- | Task master | -----------------------------------
+			// ------------------------------- | Task master | -----------------------------------
 
-            //System.Console.WriteLine(CStutorial.TaskMaster.Anagram.AreStringsAnagram("hello", "olhel"));
-            //System.Console.WriteLine(CStutorial.TaskMaster.Anagram.IndexValueR2("abbccddddcccdda"));
+			//System.Console.WriteLine(CStutorial.TaskMaster.Anagram.AreStringsAnagram("hello", "olhel"));
+			//System.Console.WriteLine(CStutorial.TaskMaster.Anagram.IndexValueR2("abbccddddcccdda"));
 
-            //CStutorial.Event.EventsExample1 _event1 = new Event.EventsExample1();
-            //_event1.Display(); // This will trow an error
+			//CStutorial.Event.EventsExample1 _event1 = new Event.EventsExample1();
+			//_event1.Display(); // This will trow an error
 
-            /*CStutorial.Event.EventExample2 _event2 = new Event.EventExample2();
-            _event2.Execute();*/
+			/*CStutorial.Event.EventExample2 _event2 = new Event.EventExample2();
+			_event2.Execute();*/
 
-            // ----------------------------- | Func and Action | --------------------------------
+			// ----------------------------- | Func and Action | --------------------------------
 
-            /*CStutorial.FuncsNActions.ActionExampleTwo _actionExaple2 = new FuncsNActions.ActionExampleTwo();
-            _actionExaple2.Execute();*/
+			/*CStutorial.FuncsNActions.ActionExampleTwo _actionExaple2 = new FuncsNActions.ActionExampleTwo();
+			_actionExaple2.Execute();*/
 
-            // ----------------------------- | Generics methods | --------------------------------
+			// ----------------------------- | Generics methods | --------------------------------
 
-            //CStutorial.Generics.GenericMethods<string>.Display("Hello");
-            //CStutorial.Generics.GenericMethods<int>.Display(1);
-            //CStutorial.Generics.GenericMethods<string>.DisplayData<int>(10000);
-            //CStutorial.Generics.GenericMethods<string>.DisplayData<Arrays.Arraysexample>(new Arrays.Arraysexample());
-            //CStutorial.Generics.GenericMethods<string>.DisplatGenricOfCertainType<Inheritance.Class1>(new Inheritance.Class1());
+			//CStutorial.Generics.GenericMethods<string>.Display("Hello");
+			//CStutorial.Generics.GenericMethods<int>.Display(1);
+			//CStutorial.Generics.GenericMethods<string>.DisplayData<int>(10000);
+			//CStutorial.Generics.GenericMethods<string>.DisplayData<Arrays.Arraysexample>(new Arrays.Arraysexample());
+			//CStutorial.Generics.GenericMethods<string>.DisplatGenricOfCertainType<Inheritance.Class1>(new Inheritance.Class1());
 
-            // ----------------------------- | Generics | -----------------------------------------
+			// ----------------------------- | Generics | -----------------------------------------
 
-            /*CStutorial.Generics.GenericClass<string> _gen1 = new Generics.GenericClass<string>();
-            _gen1.Property1 = "Hello";
-            _gen1.Property2 = "Yo";
-            _gen1.Display();
+			/*CStutorial.Generics.GenericClass<string> _gen1 = new Generics.GenericClass<string>();
+			_gen1.Property1 = "Hello";
+			_gen1.Property2 = "Yo";
+			_gen1.Display();
 
-            CStutorial.Generics.GenericClass<int> _gen2 = new Generics.GenericClass<int>();
-            _gen2.Property1 = 1; // generic are type safe
-            _gen2.Property2 = 2;
-            _gen2.Display();
+			CStutorial.Generics.GenericClass<int> _gen2 = new Generics.GenericClass<int>();
+			_gen2.Property1 = 1; // generic are type safe
+			_gen2.Property2 = 2;
+			_gen2.Display();
 
-            CStutorial.Generics.GenericMethods<string>.Display("Hello");
-            CStutorial.Generics.GenericMethods<int>.Display(54);
+			CStutorial.Generics.GenericMethods<string>.Display("Hello");
+			CStutorial.Generics.GenericMethods<int>.Display(54);
 
-            CStutorial.Generics.GenericMethods<string>.DisplayData<string>("Sawg 74"); // it ingore the type parameter at the class name
-            CStutorial.Generics.GenericMethods<string>.DisplayData("Sawg");
-            CStutorial.Generics.GenericMethods<string>.DisplayData<int>(12345); // it ingore the type parameter at the class name
-            CStutorial.Generics.GenericMethods<string>.DisplayData(732); // generics can automatically assign the data type of type parameter of the argument, by cheching the method argument
-            */
+			CStutorial.Generics.GenericMethods<string>.DisplayData<string>("Sawg 74"); // it ingore the type parameter at the class name
+			CStutorial.Generics.GenericMethods<string>.DisplayData("Sawg");
+			CStutorial.Generics.GenericMethods<string>.DisplayData<int>(12345); // it ingore the type parameter at the class name
+			CStutorial.Generics.GenericMethods<string>.DisplayData(732); // generics can automatically assign the data type of type parameter of the argument, by cheching the method argument
+			*/
 
-            // -------------------------------- | Generic Interface | -------------------------------- 
+			// -------------------------------- | Generic Interface | -------------------------------- 
 
-            /*CStutorial.Generics.GenericInterfaceClass _genericInterface = new Generics.GenericInterfaceClass();
-            _genericInterface.GenericMethod2<string>("hello");
-            _genericInterface.GenericMethod2<int>(5);*/
+			/*CStutorial.Generics.GenericInterfaceClass _genericInterface = new Generics.GenericInterfaceClass();
+			_genericInterface.GenericMethod2<string>("hello");
+			_genericInterface.GenericMethod2<int>(5);*/
 
-            // ------------------------------- | Polymorphism | ------------------------------
+			// ------------------------------- | Polymorphism | ------------------------------
 
-            //CStutorial.Polymorphisms.PolClass4 _polclass4 = new Polymorphisms.PolClass4();
+			//CStutorial.Polymorphisms.PolClass4 _polclass4 = new Polymorphisms.PolClass4();
 
-            /*Castings.Collections.CastCollDemo demoll = new Castings.Collections.CastCollDemo();
-            demoll.Execute();*/
+			/*Castings.Collections.CastCollDemo demoll = new Castings.Collections.CastCollDemo();
+			demoll.Execute();*/
 
-            // ------------------------------ | Yield | ---------------------------------------
+			// ------------------------------ | Yield | ---------------------------------------
 
-            //Yield.YieldEx.ExecuteYieldTest();
+			//Yield.YieldEx.ExecuteYieldTest();
 
-            System.Console.ReadKey();
-        }
-    }
+			// ------------------------------ | I/O Stream | ----------------------------------
+
+			//StreamIO.BackstoreStreamTypeEg.PipeStreamExample(args);
+			//StreamIO.DecoratorStreamTypeEg.BufferStreamExample();
+			StreamIO.AdapterStreamTypeEg.TextAdapterExample();
+
+			System.Console.ReadKey();
+		}
+	}
 }
