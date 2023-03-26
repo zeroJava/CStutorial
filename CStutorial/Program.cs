@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CStutorial.Extensionmethod;
+using CStutorial.Networks;
 using CStutorial.Statics;
 
 namespace CStutorial
@@ -181,7 +182,10 @@ namespace CStutorial
 
 			//StreamIO.BackstoreStreamTypeEg.PipeStreamExample(args);
 			//StreamIO.DecoratorStreamTypeEg.BufferStreamExample();
-			StreamIO.AdapterStreamTypeEg.TextAdapterExample();
+			//StreamIO.AdapterStreamTypeEg.TextAdapterExample();
+
+			TcpClientEg tcpClientEg = new TcpClientEg();
+			tcpClientEg.Run();
 
 			System.Console.ReadKey();
 		}
