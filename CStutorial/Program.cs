@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CStutorial.Extensionmethod;
+using CStutorial.MultiThreadsTwo;
 using CStutorial.Networks;
 using CStutorial.Statics;
 
@@ -184,8 +185,16 @@ namespace CStutorial
 			//StreamIO.DecoratorStreamTypeEg.BufferStreamExample();
 			//StreamIO.AdapterStreamTypeEg.TextAdapterExample();
 
-			TcpClientEg tcpClientEg = new TcpClientEg();
-			tcpClientEg.Run();
+			// ----------------------------- | Networking | -----------------------------------
+			//TcpClientEg tcpClientEg = new TcpClientEg();
+			//tcpClientEg.Run();
+
+			// ----------------------------- | Adavnce thread | -------------------------------
+			//AutoResetEventEg autoResetEventEg = new AutoResetEventEg();
+			//autoResetEventEg.ExecuteExample();
+			ManualResetEventEg manualRestEventEg = new ManualResetEventEg();
+			manualRestEventEg.ExecuteExample();
+
 
 			System.Console.ReadKey();
 		}

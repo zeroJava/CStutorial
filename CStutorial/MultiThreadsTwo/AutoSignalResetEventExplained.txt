@@ -1,0 +1,22 @@
+﻿Signaling
+
+Signaling is when a thread is blocked, and the only way it can be unblocked, is
+by receiving notification from another thread, instructing it to proceed.
+
+Singaling in C# is using the following class: AutoResetEvent, ManualResetEvent,
+ManualResetEventSlim, CountDownEvent and Barrier. The first three are know as
+event wait handles.
+
+EventWaitHandle
+
+AutoResetEvent and ManualResetEvent are inherit their functionality from the
+EventWaitHandle class. The three functionality used for signaling with the
+EventWaitHangles are Wait(), Set() and Reset().
+
+Wait() blocks the current thread.
+Set() notifies the EventWaitHandle to stop blocking.
+Reset() sets the internal flag that enables the blocking.
+
+Wait() will only block a thread, if the internal EventWaitHandle blocking flag
+is enabled; otherwise calling the Wait() will not block a thread. 
+Calling the Reset() function will enable internal blocking flag functionality.

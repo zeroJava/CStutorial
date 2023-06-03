@@ -61,8 +61,6 @@ obj/
 # Ignore everything CStutorial
 CStutorial/CStutorial.csproj
 *.cache
-*.cache
-*.cache
 *.ide-wal
 *.ide
 .vs/CStutorial/v16/.suo
@@ -70,22 +68,13 @@ CStutorial/CStutorial.csproj
 *.v2
 *.vsidx
 *.lock
-.vs/CStutorial/v16/.suo
-.vs/CStutorial/v16/.suo
 *.v1
-.vs/CStutorial/v16/.suo
 .vs/CStutorial/v17/.suo
 *.2
 *.pdb
 *.exe
 *.bak
-*.txt
-*.exe
 .vs/CStutorial/v16/.suo
-*.exe
-*.cache
 *.cache
 *.pdb
-*.txt
-.vs/CStutorial/v16/.suo
-*.txt
+CStutorial/obj/Debug/CStutorial.csproj.FileListAbsolute.txt
