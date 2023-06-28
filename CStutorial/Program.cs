@@ -189,14 +189,22 @@ namespace CStutorial
 			//TcpClientEg tcpClientEg = new TcpClientEg();
 			//tcpClientEg.Run();
 
-			// ----------------------------- | Adavnce thread | -------------------------------
+			// ----------------------------- | Multi Threading | -----------------------
+			TestMultiThreadExample();
+
+			// ----------------------------- | Adavnce thread | ------------------------
 			//AutoResetEventEg autoResetEventEg = new AutoResetEventEg();
 			//autoResetEventEg.ExecuteExample();
-			ManualResetEventEg manualRestEventEg = new ManualResetEventEg();
-			manualRestEventEg.ExecuteExample();
+			//ManualResetEventEg manualRestEventEg = new ManualResetEventEg();
+			//manualRestEventEg.ExecuteExample();
 
 
 			System.Console.ReadKey();
+		}
+
+		public static void TestMultiThreadExample()
+		{
+			MultiThreads.MultiThreadEg.ExecuteThreadOne();
 		}
 	}
 }
