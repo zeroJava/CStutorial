@@ -165,9 +165,9 @@
     <Content Include="Basics\StackAndHeapExplained.txt" />
     <Content Include="Event\EventsExplained.txt" />
     <Content Include="MultiThreadsTwo\SignalResetEventExplained.txt" />
-    <Content Include="MultiThreads\BlockingEgNotes.txt" />
-    <Content Include="MultiThreads\Explained.txt" />
-    <Content Include="MultiThreads\LockingEgNotes.txt" />
+    <Content Include="MultiThreads\Notes\BlockingEgNotes.txt" />
+    <Content Include="MultiThreads\Notes\Explained.txt" />
+    <Content Include="MultiThreads\Notes\LockingEgNotes.txt" />
     <Content Include="Solid\DependencyInversion\Dependency.txt" />
     <Content Include="Solid\InterfaceSegregation\IntefaceSegregation.txt" />
     <Content Include="Solid\LiskovSubsitute\Liskov.txt" />
