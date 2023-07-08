@@ -204,7 +204,9 @@ namespace CStutorial
 
 		public static void TestMultiThreadExample()
 		{
-			MultiThreads.MultiThreadEg.ExecuteThreadOne();
+			//MultiThreads.MultiThreadEg.ExecuteThreadOne();
+			//MultiThreads.BlockingEg.ExecuteThreadOne();
+			MultiThreads.LockingEg.ExecuteThreadOne();
 		}
 	}
 }
