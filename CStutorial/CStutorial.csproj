@@ -109,6 +109,9 @@
     <Compile Include="Basics\Methods\PassbyReferenceParameters.cs" />
     <Compile Include="MultiThreadsTwo\AutoResetEventEg.cs" />
     <Compile Include="MultiThreadsTwo\ManualResetEventEg.cs" />
+    <Compile Include="MultiThreads\BlockingEg.cs" />
+    <Compile Include="MultiThreads\MultiThreadEg.cs" />
+    <Compile Include="MultiThreads\LockingEg.cs" />
     <Compile Include="Networks\TcpClientEg.cs" />
     <Compile Include="Nullables\NullableEx1.cs" />
     <Compile Include="Partialclass\Partialeg.cs" />
@@ -161,8 +164,10 @@
     <Content Include="Arrays\ArraysExplained.txt" />
     <Content Include="Basics\StackAndHeapExplained.txt" />
     <Content Include="Event\EventsExplained.txt" />
-    <Content Include="MultiThreadsTwo\AutoSignalResetEventExplained.txt" />
+    <Content Include="MultiThreadsTwo\SignalResetEventExplained.txt" />
+    <Content Include="MultiThreads\BlockingEgNotes.txt" />
     <Content Include="MultiThreads\Explained.txt" />
+    <Content Include="MultiThreads\LockingEgNotes.txt" />
     <Content Include="Solid\DependencyInversion\Dependency.txt" />
     <Content Include="Solid\InterfaceSegregation\IntefaceSegregation.txt" />
     <Content Include="Solid\LiskovSubsitute\Liskov.txt" />

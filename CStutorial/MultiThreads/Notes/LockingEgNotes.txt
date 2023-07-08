@@ -1,0 +1,31 @@
+﻿
+-------------------------------------------------------------------------------
+
+Appendix One
+
+lock() gets compiled into the following by the compiler.
+ 
+lock (exclusiveLock)
+{
+	Console.WriteLine(name);
+	Thread.Sleep(2000);
+}
+
+compiled to -->
+
+bool lockTaken = false;
+try
+{
+   Monitor.Enter(exclusiveLock, ref lockTaken);
+   Console.WriteLine(name);
+   Thread.Sleep(2000);
+}
+finally
+{
+   if (lockTaken)
+   {
+      Monitor.Exit(exclusiveLock);
+   }
+}
+
+-------------------------------------------------------------------------------
