@@ -164,7 +164,7 @@
     <Content Include="Arrays\ArraysExplained.txt" />
     <Content Include="Basics\StackAndHeapExplained.txt" />
     <Content Include="Event\EventsExplained.txt" />
-    <Content Include="MultiThreadsTwo\SignalResetEventExplained.txt" />
+    <Content Include="MultiThreadsTwo\Notes\SignalResetEventExplained.txt" />
     <Content Include="MultiThreads\Notes\BlockingEgNotes.txt" />
     <Content Include="MultiThreads\Notes\Explained.txt" />
     <Content Include="MultiThreads\Notes\LockingEgNotes.txt" />
