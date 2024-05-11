@@ -86,3 +86,11 @@ MultiThreadingApp/BasicService/packages.config
 MultiThreadingApp/MultiThreadingApp/App.config
 MultiThreadingApp/MultiThreadingApp/LnumBasic/Numberper.txt
 CStutorial/StreamIO/Test.txt
+.vs/CStutorial/v17/DocumentLayout.json
+.vs/ProjectEvaluation/cstutorial.metadata.v7.bin
+.vs/ProjectEvaluation/cstutorial.projects.v7.bin
+CStutorial/CStutorial.csproj.user
+CStutorial/bin/Debug/CStutorial.exe
+CStutorial/obj/Debug/CStutorial.exe
+CStutorial/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+CStutorial/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
