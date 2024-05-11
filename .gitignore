@@ -78,3 +78,11 @@ CStutorial/CStutorial.csproj
 *.cache
 *.pdb
 CStutorial/obj/Debug/CStutorial.csproj.FileListAbsolute.txt
+MultiThreadingApp/BasicService/App.config
+MultiThreadingApp/BasicService/BasicService.csproj
+MultiThreadingApp/BasicService/NLog.config
+MultiThreadingApp/BasicService/NLog.xsd
+MultiThreadingApp/BasicService/packages.config
+MultiThreadingApp/MultiThreadingApp/App.config
+MultiThreadingApp/MultiThreadingApp/LnumBasic/Numberper.txt
+CStutorial/StreamIO/Test.txt
