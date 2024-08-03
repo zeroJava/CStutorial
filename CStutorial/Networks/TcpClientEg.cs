@@ -15,7 +15,7 @@ namespace CStutorial.Networks
 			while (true)
 			{
 				Console.WriteLine(">>>");
-				using (var tcpClient = new TcpClient("", 51111)) // enter ip
+				using (var tcpClient = new TcpClient("192..", 51111))
 				using (var networkstream = tcpClient.GetStream())
 				{
 					string input = Console.ReadLine();
